@@ -92,3 +92,7 @@ header {
     width: 14.17vw;
     height: 5.19vh;
 }
+
+hr {
+    overflow: visible;
+}

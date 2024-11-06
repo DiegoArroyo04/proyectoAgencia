@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TraveLight Página Principal</title>
     <link rel="stylesheet" type="text/css" href="styles/index.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -22,17 +23,139 @@
 
         <a href="#">Inicio</a>
         <a href="#">Crea tu propio viaje</a>
-        <a href="#">Paquetes destacados</a>
-        <a href="#">Acerca de Nosotros</a>
+        <a href="#paquetesDestacados">Paquetes destacados</a>
+        <a href="#conocenos">Acerca de Nosotros</a>
         <a href="#">Comparador de paquetes</a>
 
     </nav>
-    <hr>
-    <hr>
     <main>
+        <section class="carrusel">
+            <div class="contenedorCarrusel">
+                <img src="assets/carruselPaisaje1.jpeg" alt="Imagen 1 del carrusel" class="carrusel-imagen">
+                <img src="assets/carruselPaisaje2.jpeg" alt="Imagen 2 del carrusel" class="carrusel-imagen">
+                <img src="assets/carruselPaisaje3.jpeg" alt="Imagen 3 del carrusel" class="carrusel-imagen">
+                <img src="assets/carruselPaisaje4.jpeg" alt="Imagen 4 del carrusel" class="carrusel-imagen">
+            </div>
 
+            <button class="carrusel-flecha izquierda">‹</button>
+            <button class="carrusel-flecha derecha">›</button>
+        </section>
+        <section id="paquetesDestacados">
+            <div class="encabezado">
+                <h1>PAQUETES DESTACADOS</h1>
+            </div>
+            <div class="paquetes">
+                <div>
+                    <img src="assets/paquetePredeterminado1.png">
+                    <p>Escapada a la Playa Tropical</p>
+                    <p>1200€</p>
+                </div>
+                <div>
+                    <img src="assets/paquetePredeterminado2.png">
+                    <p>Aventura en las Montañas Nevadas</p>
+                    <p>900€</p>
+                </div>
+                <div>
+                    <img src="assets/paquetePredeterminado3.png">
+                    <p>Retiro en el Bosque Encantado </p>
+                    <p>1100€</p>
+                </div>
+            </div>
+
+            <button>PERSONALIZAR UN PAQUETE YA!</button>
+
+
+        </section>
+        <section id="conocenos">
+            <h1>CONÓCENOS</h1>
+            <p>TraveLight,somos una agencia de viajes dedicada a diseñar experiencias únicas y personalizadas para cada
+                uno de nuestros viajeros. Creemos que cada aventura debe ser tan especial como quien la vive, por eso
+                trabajamos contigo para crear el viaje perfecto, adaptado a tus preferencias y necesidades. Ya sea que
+                busques relajarte en playas paradisíacas, explorar ciudades llenas de historia o aventurarte por
+                paisajes exóticos, te ofrecemos paquetes a medida. Nos apasiona el descubrimiento, y nuestro objetivo es
+                hacer que cada momento de tu viaje esté lleno de inspiración, comodidad y emoción. ¡Tu próxima gran
+                aventura empieza aquí!
+
+            </p>
+            <div class="contenedorReseñas">
+                <h3>ÚLTIMAS RESEÑAS</h3>
+                <div class="reseñas">
+                    <div class="reseña">
+                        <img src="assets/estrellas.png">
+                        <div class="contenidoReseña">
+                            <h4>Experiencia Increible</h4>
+                            <p>
+                                Una gran manera de descubrir nuevos lugares. El equipo es muy profesional y amable.
+                            </p>
+                        </div>
+                        <div class="contenidoUsuario">
+                            <img src="assets/fotoPerfilReseña.png">
+                            <div class="nombreYFechaUsuarioReseña">
+                                <h5>Ana Martínez</h5>
+                                <p>08/10/2024</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="reseña">
+                        <img src="assets/estrellas.png">
+                        <div class="contenidoReseña">
+                            <h4>Destinos Ideales</h4>
+                            <p>
+                                Los destinos son impresionantes y el servicio al cliente es excepcional. Muy
+                                recomendados.
+                            </p>
+                        </div>
+                        <div class="contenidoUsuario">
+                            <img src="assets/fotoPerfilReseña2.png">
+                            <div class="nombreYFechaUsuarioReseña">
+                                <h5>Carlos García</h5>
+                                <p>07/10/2024</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="reseña">
+                        <img src="assets/estrellas.png">
+                        <div class="contenidoReseña">
+                            <h4>Creación de paquete fácil</h4>
+                            <p>
+                                Me ayudaron a crear el paquete perfecto para mis vacaciones. ¡Estoy muy satisfecha!
+                            </p>
+                        </div>
+                        <div class="contenidoUsuario">
+                            <img src="assets/fotoPerfilReseña3.png">
+                            <div class="nombreYFechaUsuarioReseña">
+                                <h5>Laura López</h5>
+                                <p>07/10/2024</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
     <footer>
+
+        <img src="assets/LOGO AGENCIA.png" class="logo">
+        <div class="contactanos">
+            <h1>Contactanos</h1>
+            <img src="assets/rsss.png">
+        </div>
+
+        <div class="copy">
+            <p>© 2024 TraveLight, Todos los derechos reservados
+                Creado por Diego Arroyo González</p>
+        </div>
+
+        <div class="enlacesFooter">
+            <a>Política de Privacidad</a>
+            <a>Aviso Legal</a>
+            <a>Términos y Condiciones</a>
+        </div>
     </footer>
 </body>
 

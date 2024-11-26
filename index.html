@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TraveLight Página Principal</title>
     <link rel="stylesheet" type="text/css" href="styles/index.css">
-    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+
 </head>
 
 <body>
@@ -18,7 +20,8 @@
         </form>
         <button class="iniciarSesionBoton">INICIAR SESIÓN / REGISTRARSE</button>
     </header>
-    <nav>
+
+    <nav class="barraNavegacion">
 
         <a href="#">Inicio</a>
         <a href="#">Crea tu propio viaje</a>
@@ -27,17 +30,13 @@
         <a href="#">Comparador de paquetes</a>
 
     </nav>
+    <hr>
     <main>
         <section class="carrusel">
-            <div class="contenedorCarrusel">
-                <img src="assets/carruselPaisaje1.jpeg" alt="Imagen 1 del carrusel" class="carrusel-imagen">
-                <img src="assets/carruselPaisaje2.jpeg" alt="Imagen 2 del carrusel" class="carrusel-imagen">
-                <img src="assets/carruselPaisaje3.jpeg" alt="Imagen 3 del carrusel" class="carrusel-imagen">
-                <img src="assets/carruselPaisaje4.jpeg" alt="Imagen 4 del carrusel" class="carrusel-imagen">
+            <div class="carruselContenido" id="carruselContenido">
+                <div id="imagenActual" class="imagenCarrusel"></div>
+                <div id="imagenSiguiente" class="imagenCarrusel"></div>
             </div>
-
-            <button class="carrusel-flecha izquierda">‹</button>
-            <button class="carrusel-flecha derecha">›</button>
         </section>
         <section id="paquetesDestacados">
             <div class="encabezado">
@@ -137,25 +136,28 @@
             </div>
         </section>
     </main>
-    <footer>
+</body>
 
-        <img src="assets/LOGO AGENCIA.png" class="logo">
-        <div class="contactanos">
-            <h1>Contactanos</h1>
-            <img src="assets/rsss.png">
-        </div>
+<footer>
 
-        <div class="copy">
-            <p>© 2024 TraveLight, Todos los derechos reservados
-                Creado por Diego Arroyo González</p>
-        </div>
+    <img src="assets/LOGO AGENCIA.png" class="logo">
+    <div class="contactanos">
+        <h1>Contactanos</h1>
+        <img src="assets/rsss.png">
+    </div>
 
-        <div class="enlacesFooter">
-            <a>Política de Privacidad</a>
-            <a>Aviso Legal</a>
-            <a>Términos y Condiciones</a>
-        </div>
-    </footer>
+    <div class="copy">
+        <p>© 2024 TraveLight, Todos los derechos reservados
+            Creado por Diego Arroyo González</p>
+    </div>
+
+    <div class="enlacesFooter">
+        <a>Política de Privacidad</a>
+        <a>Aviso Legal</a>
+        <a>Términos y Condiciones</a>
+    </div>
+</footer>
+<script src="scripts/index.js"></script>
 </body>
 
 </html>

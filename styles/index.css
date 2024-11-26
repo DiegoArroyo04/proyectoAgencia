@@ -1,15 +1,15 @@
 * {
     margin: 0;
     padding: 0;
-    height: 100%;
+    box-sizing: border-box;
 
 }
 
 body {
     background-color: #F4F4F4;
-    width: 100%;
-
+    font-family: 'Poppins';
 }
+
 
 
 header {
@@ -23,8 +23,8 @@ header {
 
 .logo {
 
-    width: 13vw;
-    height: 22.5vh;
+    width: 12vw;
+    height: auto;
 
 }
 
@@ -54,7 +54,6 @@ header {
 
 .barraBusqueda::-webkit-search-cancel-button {
     -webkit-appearance: none;
-    /* Elimina la X de los inputs de búsqueda */
     appearance: none;
 }
 
@@ -77,23 +76,34 @@ header {
 .barraBusqueda::placeholder {
     color: #333333;
     font-family: 'Poppins';
-    text-align: center;
+    text-align: left;
 
 }
 
 .iconoLupa {
-    background-image: url("./assets/iconoLupa.png");
+    position: absolute;
+    right: 4%;
+    top: 50%;
+    /*CENTRARLO AL MEDIO*/
+    transform: translateY(-50%);
+    background-image: url("../assets/iconoLupa.png");
     background-size: contain;
+    background-repeat: no-repeat;
     background-position: center;
-    width: 20%;
+    width: 2vw;
     height: 100%;
     border: none;
+    cursor: pointer;
+    background-color: transparent;
 
 }
 
 .iniciarSesionBoton {
-
-    height: 5.19vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1%;
+    height: 30%;
     background-color: #FF9A62;
     border-radius: 20px;
     border: none;
@@ -101,11 +111,75 @@ header {
     cursor: pointer;
     font-family: 'Poppins';
     font-weight: bold;
-    font-size: 16px;
-
+    font-size: 1rem;
 
 }
 
+.barraNavegacion {
+    margin: 1%;
+    display: flex;
+    justify-content: center;
+    height: 2vh;
+}
+
+.barraNavegacion a {
+    text-decoration: none;
+    font-weight: 600;
+    color: #333333;
+    font-size: 1.0625rem;
+    padding-right: 2%;
+}
+
+.barraNavegacion a:hover {
+    color: #FF9A62;
+    cursor: pointer;
+}
+
 hr {
-    overflow: visible;
+    border: none;
+    height: 1px;
+    background-color: #E0E0E0;
+    margin: 1.5%
+}
+
+.carrusel {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.carruselContenido {
+    margin: 2%;
+    width: 1200px;
+    height: 500px;
+    display: flex;
+    position: relative;
+    border-radius: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+.imagenCarrusel {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0;
+    transition: opacity 3s ease-in-out;
+}
+
+
+#imagenActual {
+    background-image: url("assets/carruselPaisaje1.jpeg");
+    opacity: 1;
+}
+
+
+#imagenSiguiente {
+    opacity: 0;
 }

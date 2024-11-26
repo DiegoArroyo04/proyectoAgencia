@@ -139,7 +139,7 @@ hr {
     border: none;
     height: 1px;
     background-color: #E0E0E0;
-    margin: 1.5%
+    margin-bottom: 1.5%;
 }
 
 .carrusel {
@@ -182,4 +182,68 @@ hr {
 
 #imagenSiguiente {
     opacity: 0;
+}
+
+.encabezado h1 {
+    font-size: 2.625rem;
+    font-weight: 700;
+}
+
+.encabezado {
+    display: flex;
+    justify-content: center;
+    margin: 4%;
+    margin-top: 8%;
+}
+
+
+.paquetes {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 6%;
+}
+
+.paquete {
+    position: relative;
+    transition: transform 0.2s ease-in-out;
+
+}
+
+.imagenPaquete {
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+}
+
+.paquete:hover {
+    transform: scale(1.03);
+    cursor: pointer;
+
+}
+
+.tituloPaquetePrederminado {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.precioPaquetePrederminado {
+    font-size: 1.3rem;
+    font-weight: 700;
+
+}
+
+.infoPaquetePredeterminado {
+    position: absolute;
+    bottom: 3%;
+    left: 4%;
+}
+
+.infoPaquetePredeterminadoLargo .precioPaquetePrederminado {
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.infoPaquetePredeterminadoLargo {
+    position: absolute;
+    bottom: 1.5%;
+    left: 4%;
 }

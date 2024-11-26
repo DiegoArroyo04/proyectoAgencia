@@ -33,12 +33,13 @@ header {
     align-items: center;
     position: relative;
     width: 18.75vw;
+    height: 4.07vh;
 }
 
 .barraBusqueda {
     font-family: 'Poppins';
     width: 18.75vw;
-    height: 4.07vh;
+    height: 100%;
     background-color: #F4F4F4;
     border-radius: 28px;
     border: 1px solid #E8E8E8;
@@ -50,10 +51,6 @@ header {
     color: #333333;
 }
 
-.barraBusqueda::placeholder {
-    color: #333333;
-    font-size: 0.88vw;
-}
 
 .barraBusqueda::-webkit-search-cancel-button {
     -webkit-appearance: none;
@@ -85,14 +82,13 @@ header {
 }
 
 .iconoLupa {
-    width: 2.5vw;
-    height: 4.44vh;
-    position: absolute;
-    top: 50%;
-    right: 1vw;
-    cursor: pointer;
-    /* Ajusta la posición desde la derecha */
-    transform: translateY(-50%);
+    background-image: url("./assets/iconoLupa.png");
+    background-size: contain;
+    background-position: center;
+    width: 20%;
+    height: 100%;
+    border: none;
+
 }
 
 .iniciarSesionBoton {

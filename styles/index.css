@@ -10,8 +10,6 @@ body {
     font-family: 'Poppins';
 }
 
-
-
 header {
     background-color: #00BFA6;
     width: 100%;
@@ -50,7 +48,6 @@ header {
     font-size: 0.88vw;
     color: #333333;
 }
-
 
 .barraBusqueda::-webkit-search-cancel-button {
     -webkit-appearance: none;
@@ -112,7 +109,11 @@ header {
     font-family: 'Poppins';
     font-weight: bold;
     font-size: 1rem;
+    transition: transform 0.2s ease-in-out;
+}
 
+.iniciarSesionBoton:hover {
+    transform: scale(1.03);
 }
 
 .barraNavegacion {
@@ -196,7 +197,6 @@ hr {
     margin-top: 8%;
 }
 
-
 .paquetes {
     display: flex;
     justify-content: space-evenly;
@@ -217,7 +217,6 @@ hr {
 .paquete:hover {
     transform: scale(1.03);
     cursor: pointer;
-
 }
 
 .tituloPaquetePrederminado {
@@ -237,13 +236,25 @@ hr {
     left: 4%;
 }
 
-.infoPaquetePredeterminadoLargo .precioPaquetePrederminado {
+.infoPaquetePredeterminadoLargo .tituloPaquetePrederminado {
     font-size: 1rem;
-    font-weight: 700;
 }
 
 .infoPaquetePredeterminadoLargo {
     position: absolute;
-    bottom: 1.5%;
+    bottom: 0%;
     left: 4%;
+}
+
+.contenedorBoton {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: red;
+}
+
+.botonSecundario {
+    background-color: #00BFA6;
+    border: none;
+    width: 40%;
 }

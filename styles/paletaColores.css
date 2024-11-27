@@ -1,0 +1,23 @@
+/*PALETA DE COLORES */
+:root {
+    /* Colores primarios */
+    --turquesa-claro: #00BFA6;
+    --naranja-calido: #FF9A62;
+    --gris-claro: #F4F4F4;
+
+    /* Colores secundarios */
+    --blanco-puro: #FFFFFF;
+    --gris-oscuro: #333333;
+    --negro: #000000;
+    --blanco-cremoso: #F9F7F1;
+    --crema: #FDE9D9;
+    --naranja-oscuro: #FF833A;
+    --turquesa-oscuro: #009E8A;
+    --gris-claro2: #D9D9D9;
+    --gris: #999999;
+    --blanco-cremoso2: #F4F1EB;
+    --gris-claro3: #B0B0B0;
+    --gris-claro4: #A9A9A9;
+    --amarillo-yema: #FFC875;
+    --gris-muy-claro: #F9F9F9;
+}

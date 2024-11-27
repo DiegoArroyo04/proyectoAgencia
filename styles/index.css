@@ -1,17 +1,36 @@
+@import url('paletaColores.css');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins';
+    cursor: url('../assets/cursor.png'), auto;
 
 }
 
 body {
-    background-color: #F4F4F4;
-    font-family: 'Poppins';
+    background-color: var(--gris-claro);
+}
+
+/*SCROLL*/
+body::-webkit-scrollbar {
+    width: 12px;
+
+}
+
+body::-webkit-scrollbar-track {
+    background: var(--gris-claro2);
+
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: var(--naranja-calido);
+    border-radius: 10px;
 }
 
 header {
-    background-color: #00BFA6;
+    background-color: var(--turquesa-claro);
     width: 100%;
     height: 16.11vh;
     display: flex;
@@ -38,15 +57,15 @@ header {
     font-family: 'Poppins';
     width: 18.75vw;
     height: 100%;
-    background-color: #F4F4F4;
+    background-color: var(--gris-claro);
     border-radius: 28px;
-    border: 1px solid #E8E8E8;
+    border: 1px solid var(--gris-claro2);
     padding: 0 3vw;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
     transition: all 0.3s ease;
     outline: none;
     font-size: 0.88vw;
-    color: #333333;
+    color: var(--gris-oscuro);
 }
 
 .barraBusqueda::-webkit-search-cancel-button {
@@ -58,20 +77,20 @@ header {
     font-family: 'Poppins';
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
     font-size: 0.88vw;
-    color: #333333;
+    color: var(--gris-oscuro);
 
 }
 
 .barraBusqueda:hover {
-    background-color: #F7F7F7;
-    border: 1px solid #D1D1D1;
+    background-color: var(--blanco-puro);
+    border: 1px solid var(--gris);
     box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
-    cursor: pointer;
+    cursor: url('../assets/cursorPointer.png'), pointer;
 }
 
 
 .barraBusqueda::placeholder {
-    color: #333333;
+    color: var(--gris-oscuro);
     font-family: 'Poppins';
     text-align: left;
 
@@ -90,7 +109,7 @@ header {
     width: 2vw;
     height: 100%;
     border: none;
-    cursor: pointer;
+    cursor: url('../assets/cursorPointer.png'), pointer;
     background-color: transparent;
 
 }
@@ -101,11 +120,11 @@ header {
     align-items: center;
     padding: 1%;
     height: 30%;
-    background-color: #FF9A62;
+    background-color: var(--naranja-calido);
     border-radius: 20px;
     border: none;
-    color: #FFFFFF;
-    cursor: pointer;
+    color: var(--blanco-puro);
+    cursor: url('../assets/cursorPointer.png'), pointer;
     font-family: 'Poppins';
     font-weight: bold;
     font-size: 1rem;
@@ -126,20 +145,20 @@ header {
 .barraNavegacion a {
     text-decoration: none;
     font-weight: 600;
-    color: #333333;
+    color: var(--gris-oscuro);
     font-size: 1.0625rem;
     padding-right: 2%;
 }
 
 .barraNavegacion a:hover {
-    color: #FF9A62;
-    cursor: pointer;
+    color: var(--naranja-calido);
+    cursor: url('../assets/cursorPointer.png'), pointer;
 }
 
 hr {
     border: none;
     height: 1px;
-    background-color: #E0E0E0;
+    background-color: var(--gris-claro2);
     margin-bottom: 1.5%;
 }
 
@@ -190,6 +209,10 @@ hr {
     font-weight: 700;
 }
 
+.paquetesDestacados {
+    margin-bottom: 11%;
+}
+
 .encabezado {
     display: flex;
     justify-content: center;
@@ -212,11 +235,12 @@ hr {
 .imagenPaquete {
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     border-radius: 20px;
+    cursor: url('../assets/cursorPointer.png'), pointer;
 }
 
 .paquete:hover {
     transform: scale(1.03);
-    cursor: pointer;
+    cursor: url('../assets/cursorPointer.png'), pointer;
 }
 
 .tituloPaquetePrederminado {
@@ -250,11 +274,36 @@ hr {
     display: flex;
     justify-content: center;
     width: 100%;
-    background-color: red;
+    height: 10vh;
+
+
 }
 
 .botonSecundario {
-    background-color: #00BFA6;
+    background-color: var(--turquesa-claro);
     border: none;
-    width: 40%;
+    width: 23%;
+    border-radius: 28px;
+    cursor: url('../assets/cursorPointer.png'), pointer;
+    color: var(--blanco-puro);
+    font-weight: bold;
+    font-size: 1.4375rem;
+}
+
+.botonSecundario:hover {
+    background-color: var(--turquesa-oscuro);
+
+}
+
+.textoPresentacion {
+    margin: 0 23%;
+    font-size: 1.0625rem;
+    margin-bottom: 4%;
+}
+
+.contenedorReseñas {
+    background-color: var(--gris-muy-claro);
+    display: flex;
+    flex-direction: column;
+    width: 50%;
 }

@@ -305,5 +305,36 @@ hr {
     background-color: var(--gris-muy-claro);
     display: flex;
     flex-direction: column;
-    width: 50%;
+
+    width: 64%;
+    margin: 0 18%;
+    border: 1px solid #000000;
+    border-radius: 30px;
+    height: 47.2vh;
+
+
+}
+
+.encabezadoReseñas h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.reseñas {
+    display: flex;
+}
+
+.reseña {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--blanco-puro);
+    border-radius: 8px;
+    border: 1px solid var(--gris-claro2);
+    width: 325px;
+    height: 248px;
+}
+
+.reseña img {
+    max-width: 116px;
+    max-height: 20px;
 }

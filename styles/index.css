@@ -229,16 +229,19 @@ hr {
 .paquete {
     position: relative;
     transition: transform 0.2s ease-in-out;
+    cursor: url('../assets/cursorPointer.png'), pointer;
 
 }
 
 .imagenPaquete {
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     border-radius: 20px;
-    cursor: url('../assets/cursorPointer.png'), pointer;
+
+
 }
 
-.paquete:hover {
+.paquete:hover,
+.paquete * {
     transform: scale(1.03);
     cursor: url('../assets/cursorPointer.png'), pointer;
 }
@@ -261,7 +264,7 @@ hr {
 }
 
 .infoPaquetePredeterminadoLargo .tituloPaquetePrederminado {
-    font-size: 1rem;
+    line-height: 1.1;
 }
 
 .infoPaquetePredeterminadoLargo {

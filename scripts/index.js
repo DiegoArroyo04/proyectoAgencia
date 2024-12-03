@@ -52,6 +52,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // Mostrar modal de Política de Privacidad
     document.getElementById('politicaPrivacidad').onclick = function () {
         modalPoliticaPrivacidad.style.display = "block";
+
     }
 
     // Mostrar modal de Aviso Legal

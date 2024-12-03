@@ -517,11 +517,36 @@ footer .logo {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.7);
     overflow: hidden;
-    transition: opacity 0.3s ease;
+
+}
+
+@keyframes aparecerModal {
+    0% {
+        transform: scale(0.9);
+        opacity: 0;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Animación para cerrar el modal */
+@keyframes desaparecerModal {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(0.9);
+        opacity: 0;
+    }
 }
 
 .modal p {
-    padding: 2%;
+    padding: 1%;
 }
 
 .modalContenido {
@@ -533,10 +558,12 @@ footer .logo {
     border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     position: relative;
+    animation: aparecerModal 1s ease-out;
 }
 
 .modalContenido h2 {
     color: var(--turquesa-claro);
+    padding: 1%;
 }
 
 .cerrar {

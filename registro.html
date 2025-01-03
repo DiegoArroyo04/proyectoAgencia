@@ -14,17 +14,23 @@
     <div class="containerRegistro">
         <img src="assets/LOGO AGENCIA.png" class="logo">
         <form>
-            <input type="text" class="input" placeholder="NOMBRE">
-            <input type="text" class="input" placeholder="APELLIDOS">
-            <input type="text" class="input" placeholder="DNI">
-            <input type="number" class="input" placeholder="TELÉFONO">
-            <input type="email" class="input" placeholder="EMAIL">
-            <input type="text" class="input" placeholder="NOMBRE DE USUARIO">
-            <input type="password" class="input" placeholder="CONTRASEÑA">
-            <input type="password" class="input" placeholder="CONFIRMAR CONTRASEÑA">
-            <label for="terminos" class="enlaces">Acepto los <a>términos y condiciones</a> </label>
-            <input type="checkbox" id="terminos" class="input">
-            <button class="iniciarSesionBoton" id="iniciarSesionBoton">REGISTRARSE</button>
+            <div class="inputs">
+                <input type="text" class="input" placeholder="NOMBRE">
+                <input type="text" class="input" placeholder="APELLIDOS">
+                <input type="text" class="input" placeholder="DNI">
+                <input type="number" class="input" placeholder="TELÉFONO">
+                <input type="email" class="input" placeholder="EMAIL">
+                <input type="text" class="input" placeholder="NOMBRE DE USUARIO">
+                <input type="password" class="input" placeholder="CONTRASEÑA">
+                <input type="password" class="input" placeholder="CONFIRMAR CONTRASEÑA">
+            </div>
+            <div class="componentesAbajoFormulario">
+                <div class="terminosCondiciones">
+                    <label for="terminos" class="enlaces">Acepto los <a>términos y condiciones</a> </label>
+                    <input type="checkbox" id="terminos">
+                </div>
+                <button class="registrarseBoton" id="iniciarSesionBoton">REGISTRARSE</button>
+            </div>
         </form>
         <div class="enlaces">
             <p>¿Ya tienes una cuenta?</p>

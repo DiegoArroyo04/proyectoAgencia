@@ -21,3 +21,9 @@ window.onclick = function (event) {
 document.getElementById('botonAceptarTerminos').onclick = function () {
     modalTerminosCondiciones.style.display = "none";
 };
+
+//REDIRIGIR AL LOGIN UNA VEZ REGISTRADO
+document.getElementById("registrarseBoton").addEventListener("click", function () {
+    event.preventDefault();
+    window.location.href = 'login.html';
+});

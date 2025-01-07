@@ -111,6 +111,7 @@ body {
 
 .enlaces a:hover {
     text-decoration: underline;
+    color: var(--naranja-calido);
 }
 
 .logo {

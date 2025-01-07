@@ -26,8 +26,9 @@
             </div>
             <div class="componentesAbajoFormulario">
                 <div class="terminosCondiciones">
-                    <label for="terminos" class="enlaces">Acepto los <a>términos y condiciones</a> </label>
-                    <input type="checkbox" id="terminos">
+                    <label for="terminos" class="enlaces">Acepto los <a id="terminosCondiciones">términos y
+                            condiciones</a> </label>
+                    <input type="checkbox" id="terminos" class="checkTerminos">
                 </div>
                 <button class="registrarseBoton" id="iniciarSesionBoton">REGISTRARSE</button>
             </div>
@@ -35,6 +36,22 @@
         <div class="enlaces">
             <p>¿Ya tienes una cuenta?</p>
             <a href="login.html">Iniciar Sesión</a>
+        </div>
+    </div>
+
+    <!-- Modal de Términos y Condiciones -->
+    <div id="modalTerminosCondiciones" class="modal">
+        <div class="modalContenido">
+            <span class="cerrar" id="cerrarTerminosCondiciones">&times;</span>
+            <h2>Términos y Condiciones</h2>
+            <p>Los siguientes términos y condiciones rigen el uso de los servicios ofrecidos por TraveLight. Al
+                contratar nuestros paquetes turísticos, aceptas cumplir con todas las políticas, condiciones y
+                disposiciones que se describen aquí.</p>
+            <p>Los precios, itinerarios y ofertas están sujetos a cambios sin previo aviso. Nos reservamos el derecho de
+                modificar los términos de los servicios en cualquier momento. Es tu responsabilidad verificar la
+                exactitud de la información antes de proceder con la contratación.</p>
+            <p>Para más detalles, consulta la política completa de nuestros términos y condiciones.</p>
+            <button class="botonAceptar" id="botonAceptarTerminos">Acepto los Términos y Condiciones</button>
         </div>
     </div>
     <script src="scripts/registro.js"></script>

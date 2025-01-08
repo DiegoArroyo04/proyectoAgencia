@@ -37,32 +37,45 @@
     </nav>
     <hr>
     <div class="body">
-        <div class="configuradorContainer">
+        <div class="configuradorContainer" id="configuradorContainer">
             <h1 class="titulo">CONFIGURADOR DE PAQUETES</h1>
             <form class="busquedaDestino">
                 <input type="search" placeholder="SELECCIONA TU DESTINO" class="barraBusquedaPaquete">
                 <button type="submit" class="lupaPaquete"></button>
             </form>
             <div id="map" class="mapa"></div>
-            <form id="datosPaquete" class="datosPaquete">
-                <div class="inputField">
-                    <label for="fechaEntrada">Fecha de Entrada</label>
-                    <input type="date" id="fechaEntrada" required>
+            <div id="paso2Configurador" class="paso2Configurador">
+                <form id="datosPaquete" class="datosPaquete">
+                    <div class="inputField">
+                        <label for="fechaEntrada">Fecha de Entrada</label>
+                        <input type="date" id="fechaEntrada" required>
+                        <div class="iconoCalendario" onclick="openCalendar('fechaEntrada')"></div>
+                    </div>
+                    <div class="inputField">
+                        <label for="fechaSalida">Fecha de Salida</label>
+                        <input type="date" id="fechaSalida" required>
+                        <div class="iconoCalendario" onclick="openCalendar('fechaSalida')"></div>
+                    </div>
+                    <div class="inputField">
+                        <label for="numPersonas" required>Número de personas</label>
+                        <input type="number">
+                    </div>
+                </form>
+                <div class="containerBarra">
+                    <p>Tu Aventura Ideal Esta Solo a 4 pasos</p>
+                    <progress value="20" max="100" class="barraProgreso"></progress>
                 </div>
-                <div class="inputField">
-                    <label for="fechaSalida">Fecha de Salida</label>
-                    <input type="date" id="fechaSalida" required>
+                <div class="continuar">
+                    <button id="continuarBoton2" class="botonPaquete">CONTINUAR</button>
+                    <button id="volverBoton2" class="botonPaquete">VOLVER ATRÁS</button>
                 </div>
-                <div class="inputField">
-                    <label for="numPersonas" required>Número de personas</label>
-                    <input type="number">
-                </div>
-            </form>
-            <div class="continuar">
+            </div>
+
+            <div class="continuarPrimeraPantalla" id="continuarPrimeraPantalla">
                 <button id="continuarBoton1" class="botonPaquete">CONTINUAR</button>
                 <div class="containerBarra">
                     <p>Tu Aventura Ideal Esta Solo a 5 pasos</p>
-                    <progress value="20" max="100" class="barraProgreso"></progress>
+                    <progress value="0" max="100" class="barraProgreso"></progress>
                 </div>
             </div>
 

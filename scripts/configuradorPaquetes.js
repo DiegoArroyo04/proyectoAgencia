@@ -88,6 +88,8 @@ document.getElementById("continuarBoton1").addEventListener("click", function ()
     void document.getElementById("configuradorContainer").offsetWidth;
     document.getElementById("configuradorContainer").classList.add("animarModal");
 
+
+
 })
 
 
@@ -102,3 +104,37 @@ function openCalendar(inputId) {
 document.getElementById("volverBoton2").addEventListener("click", function () {
     window.location.href = 'configuradorPaquetes.html';
 });
+
+//ABRIR PASO 3 CONFIGURADOR PAQUETE
+document.getElementById("continuarBoton2").addEventListener("click", function () {
+    //ESCONDER PASO 2
+    document.getElementById("paso2Configurador").style.display = "none";
+    document.getElementById("busquedaDestino").style.display = "none";
+
+    //MOSTRAR PASO 3
+    document.getElementById("paso3Configurador").style.display = "flex";
+
+    //ANIMAR MODAL
+    document.getElementById("configuradorContainer").classList.remove("animarModal");
+    void document.getElementById("configuradorContainer").offsetWidth;
+    document.getElementById("configuradorContainer").classList.add("animarModal");
+
+});
+
+//VOLVER AL PASO 2
+document.getElementById("volverBoton3").addEventListener("click", function () {
+
+    //ESCONDER PASO 3
+    document.getElementById("paso3Configurador").style.display = "none";
+
+    //MOSTRAR PASO 2
+    document.getElementById("paso2Configurador").style.display = "flex";
+    document.getElementById("busquedaDestino").style.display = "block";
+
+    //ANIMAR MODAL
+    document.getElementById("configuradorContainer").classList.remove("animarModal");
+    void document.getElementById("configuradorContainer").offsetWidth;
+    document.getElementById("configuradorContainer").classList.add("animarModal");
+
+
+})

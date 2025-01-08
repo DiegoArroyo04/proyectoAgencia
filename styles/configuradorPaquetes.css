@@ -267,6 +267,123 @@ hr {
     align-items: center;
 }
 
+.paso3Configuracion {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+
+
+.encabezadoSecundario {
+    font-weight: 400;
+    font-size: 33px;
+    color: var(--gris-oscuro);
+    margin-bottom: 4%;
+}
+
+.alojamientos {
+    width: 100%;
+    height: 874px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 4%;
+}
+
+
+/*SCROLL*/
+.alojamientos::-webkit-scrollbar {
+    width: 29px;
+
+
+}
+
+.alojamientos::-webkit-scrollbar-track {
+    background: #999999;
+    border-radius: 11px;
+
+}
+
+.alojamientos::-webkit-scrollbar-thumb {
+    background-color: var(--gris-claro2);
+    border-radius: 11px;
+}
+
+
+.alojamiento {
+    margin-bottom: 6%;
+    width: 959px;
+    height: 374px;
+    /* Evitar que los elementos se reduzcan */
+    flex: 0 0 auto;
+
+}
+
+.alojamiento h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 1%;
+}
+
+.alojamiento hr {
+    width: 100%;
+    background-color: #CCCCCC;
+}
+
+.alojamientoInformacion {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.alojamientoInformacion img {
+    width: 292px;
+    height: 287px;
+
+}
+
+.textoAlojamiento {
+    width: 527px;
+    height: 236px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.textoAlojamiento p {
+    font-weight: 400;
+    font-size: 20px;
+    color: #666666;
+}
+
+.precioSeleccion {
+    display: flex;
+    align-items: center;
+
+}
+
+.secundario {
+    background-color: var(--turquesa-claro);
+    border-radius: 28px;
+    color: var(--blanco-puro);
+    width: 200px;
+    height: 50px;
+    border: none;
+    font-weight: bold;
+    font-size: 18px;
+    cursor: url('../assets/cursorPointer.png'), pointer;
+}
+
+.precioSeleccion p {
+    color: var(--naranja-calido);
+    font-weight: bold;
+    font-size: 20px;
+    margin-right: 14%;
+}
+
 .datosPaquete {
     display: flex;
     width: 281px;

@@ -39,11 +39,18 @@
     <div class="body">
         <div class="configuradorContainer" id="configuradorContainer">
             <h1 class="titulo">CONFIGURADOR DE PAQUETES</h1>
-            <form class="busquedaDestino">
+            <form class="busquedaDestino" id="busquedaDestino">
                 <input type="search" placeholder="SELECCIONA TU DESTINO" class="barraBusquedaPaquete">
                 <button type="submit" class="lupaPaquete"></button>
             </form>
             <div id="map" class="mapa"></div>
+            <div class="continuarPrimeraPantalla" id="continuarPrimeraPantalla">
+                <button id="continuarBoton1" class="botonPaquete">CONTINUAR</button>
+                <div class="containerBarra">
+                    <p>Tu Aventura Ideal Esta Solo a 5 pasos</p>
+                    <progress value="0" max="100" class="barraProgreso"></progress>
+                </div>
+            </div>
             <div id="paso2Configurador" class="paso2Configurador">
                 <form id="datosPaquete" class="datosPaquete">
                     <div class="inputField">
@@ -70,9 +77,59 @@
                     <button id="volverBoton2" class="botonPaquete">VOLVER ATRÁS</button>
                 </div>
             </div>
-
-            <div class="continuarPrimeraPantalla" id="continuarPrimeraPantalla">
-                <button id="continuarBoton1" class="botonPaquete">CONTINUAR</button>
+            <div id="paso3Configurador" class="paso3Configuracion">
+                <h2 class="encabezadoSecundario">ALOJAMIENTOS DISPONIBLES</h2>
+                <div class="alojamientos">
+                    <div id="alojamiento1" class="alojamiento">
+                        <h3>Tokyo Serinity Suite</h3>
+                        <hr>
+                        <div class="alojamientoInformacion">
+                            <img src="assets/imagenAlojamiento1.png">
+                            <div class="textoAlojamiento">
+                                <p>Disfruta de una experiencia de lujo en esta habitación moderna con vistas panorámicas
+                                    de
+                                    la ciudad. Decorada con elegantes detalles japoneses y equipada con tecnología de
+                                    última
+                                    generación para tu comodidad.</p>
+                                <div class="precioSeleccion">
+                                    <p>PRECIO:$180 por noche</p>
+                                    <button class="secundario">SELECCIONAR</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="alojamiento2" class="alojamiento">
+                        <h3>Imperial Garden Hotel</h3>
+                        <hr>
+                        <div class="alojamientoInformacion">
+                            <img src="assets/imagenAlojamiento2.png">
+                            <div class="textoAlojamiento">
+                                <p>Este hotel ofrece un lobby majestuoso, con interiores de mármol y una atmósfera de
+                                    lujo. Perfecto para quienes buscan una estadía sofisticada cerca de los puntos más
+                                    emblemáticos de Tokio.</p>
+                                <div class="precioSeleccion">
+                                    <p>PRECIO:$250 por noche</p>
+                                    <button class="secundario">SELECCIONAR</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="alojamiento3" class="alojamiento">
+                        <h3>Oasis Tokyo Pool Resort</h3>
+                        <hr>
+                        <div class="alojamientoInformacion">
+                            <img src="assets/imagenAlojamiento3.png">
+                            <div class="textoAlojamiento">
+                                <p>Relájate en esta tranquila zona de piscina al aire libre, rodeada de exuberantes
+                                    jardines y modernas instalaciones. Un retiro perfecto del bullicio de la ciudad.</p>
+                                <div class="precioSeleccion">
+                                    <p>PRECIO:$220 por noche</p>
+                                    <button class="secundario">SELECCIONAR</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div class="containerBarra">
                     <p>Tu Aventura Ideal Esta Solo a 5 pasos</p>
                     <progress value="0" max="100" class="barraProgreso"></progress>

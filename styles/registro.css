@@ -21,7 +21,6 @@ body {
 .containerRegistro {
     width: 40.8%;
     background-color: var(--crema);
-    height: 74%;
     border-radius: 30px;
     display: flex;
     flex-direction: column;
@@ -33,9 +32,9 @@ body {
 
 .logo {
     position: absolute;
-    width: 50%;
-    top: -31%;
-    right: 23%;
+    width: 34%;
+    top: -17%;
+    right: 33%;
 }
 
 .inputs {
@@ -81,7 +80,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 10%;
+    margin-bottom: 4%;
 }
 
 .terminosCondiciones {
@@ -93,8 +92,8 @@ body {
 }
 
 .checkTerminos {
-    width: 3%;
-    height: 90%;
+    width: 24px;
+    height: 24px;
     border-radius: 4px;
     background-color: var(--blanco-puro);
     border: 2px solid var(--gris-claro2);
@@ -130,8 +129,8 @@ body {
 
 
 .registrarseBoton {
-    width: 37.2%;
-    height: 11.9%;
+    width: 292px;
+    height: 50px;
     background-color: var(--naranja-oscuro);
     color: var(--blanco-puro);
     font-size: 1rem;
@@ -140,6 +139,7 @@ body {
     cursor: url('../assets/cursorPointer.png'), pointer;
     border: none;
     transition: transform 0.2s ease-in-out;
+
 }
 
 .registrarseBoton:hover {
@@ -153,6 +153,8 @@ body {
     text-decoration: none;
     width: 39%;
     text-align: center;
+    margin-bottom: 2%;
+
 }
 
 .enlaces a {

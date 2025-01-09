@@ -294,7 +294,7 @@
                     </div>
                 </div>
                 <div class="botonesConfirmacion">
-                    <button class="botonConfirmacion">RESERVAR Y PAGAR</button>
+                    <button class="botonConfirmacion" id="reservar">RESERVAR Y PAGAR</button>
                     <button class="botonConfirmacion">AGREGAR AL COMPARADOR DE PAQUETES</button>
                 </div>
                 <div class="containerVolverAtras">
@@ -302,14 +302,90 @@
                 </div>
             </div>
             <div class="ultimoPaso" id="ultimoPaso">
-
+                <h2 class="encabezadoSecundario">TU AVENTURA ESTA LISTA</h2>
+                <div class="datosPasajeros">
+                    <div class="pasajero">
+                        <h3>DATOS PASAJERO 1</h3>
+                        <hr>
+                        <form class="formularioPasajero">
+                            <div class="filaFormulario">
+                                <input type="text" placeholder="Nombre" required>
+                                <input type="text" placeholder="Apellidos" required>
+                            </div>
+                            <div class="filaFormulario">
+                                <input type="text" placeholder="DNI" required>
+                                <input type="email" placeholder="Email" required>
+                            </div>
+                            <div class="filaFormulario">
+                                <input type="number" placeholder="Teléfono" required>
+                                <input type="text" placeholder="Dirección" required>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="pasajero">
+                        <h3>DATOS PASAJERO 2</h3>
+                        <hr>
+                        <form class="formularioPasajero">
+                            <div class="filaFormulario">
+                                <input type="text" placeholder="Nombre" required>
+                                <input type="text" placeholder="Apellidos" required>
+                            </div>
+                            <div class="filaFormulario">
+                                <input type="text" placeholder="DNI" required>
+                                <input type="email" placeholder="Email" required>
+                            </div>
+                            <div class="filaFormulario">
+                                <input type="number" placeholder="Teléfono" required>
+                                <input type="text" placeholder="Dirección" required>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="pasajero">
+                        <h3>DATOS PASAJERO 3</h3>
+                        <hr>
+                        <form class="formularioPasajero">
+                            <div class="filaFormulario">
+                                <input type="text" placeholder="Nombre" required>
+                                <input type="text" placeholder="Apellidos" required>
+                            </div>
+                            <div class="filaFormulario">
+                                <input type="text" placeholder="DNI" required>
+                                <input type="email" placeholder="Email" required>
+                            </div>
+                            <div class="filaFormulario">
+                                <input type="number" placeholder="Teléfono" required>
+                                <input type="text" placeholder="Dirección" required>
+                            </div>
+                        </form>
+                    </div>
+                </div>
             </div>
         </div>
         <div id="fotoDestino" class="fotoDestino"></div>
+        <div id="pasarelaPago" class="pasarelaPago">
+            <h1 class="titulo">PASARELA DE PAGO</h1>
+            <div class="pasarelaInfo">
+                <form>
+                    <input type="text" placeholder="Nombre Titular" required>
+                    <input type="text" placeholder="Numero de Tarjeta" required>
+                    <input type="text" placeholder="Fecha Expiración (MM/AA)" required pattern="\d{2}/\d{2}">
+                    <input type="password" placeholder="CVV" required>
+                </form>
+                <div class="logoYPrecio">
+                    <img src="assets/LOGO AGENCIA.png">
+                    <div class="precioTotalPaquete">
+                        <p>PRECIO TOTAL:</p>
+                        <p class="precio">15200 $</p>
+                    </div>
+                </div>
+            </div>
+            <div class="metodoPago">
+                <img src="/assets/metodosPago.png">
+                <button class="botonConfirmacion">RESERVAR Y PAGAR</button>
+            </div>
+        </div>
     </div>
-
     <footer>
-
         <img src="assets/LOGO AGENCIA.png" class="logo">
         <div class="contactanos">
             <h1>Contactanos</h1>

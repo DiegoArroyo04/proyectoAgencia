@@ -9,7 +9,7 @@ document.getElementById("configuradorContainer").classList.add("animarModal");
 
 
 // Crear el mapa
-var map = L.map('map').setView([35.6762, 139.6503], 12);  // Coordenadas de Tokio
+var map = L.map('map').setView([35.6762, 139.7503], 12);  // Coordenadas de Tokio
 
 // Usar el estilo CartoDB Positron para un efecto cálido
 L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png', {
@@ -17,7 +17,7 @@ L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r
 }).addTo(map);
 
 // Crear un marcador en Tokio
-L.marker([35.6762, 139.6503]).addTo(map)
+L.marker([35.6762, 139.7406]).addTo(map)
     .bindPopup("<b>Tokio</b>")
     .openPopup();
 
@@ -307,11 +307,6 @@ document.getElementById("volverBoton5").addEventListener("click", function () {
 })
 
 //AVANZAR AL PASO 6
-
-
-
-
-
 document.getElementById("continuarBoton5").addEventListener("click", function () {
 
     //ESCONDER PASO 5
@@ -391,5 +386,31 @@ document.getElementById("volverBoton6").addEventListener("click", function () {
 
 
 })
+
+
+
+//AVANZAR A LA PASARELA DE PAGO
+document.getElementById("reservar").addEventListener("click", function () {
+
+    //ESCONDER PASO 6
+    document.getElementById("paso6Configurador").style.display = "none";
+
+    //ESCONDER FOTO DESTINO
+    document.getElementById("fotoDestino").style.display = "none";
+
+    //MOSTRAR PASARELA DE PAGO
+    document.getElementById("ultimoPaso").style.display = "flex";
+    document.getElementById("pasarelaPago").style.display = "flex";
+
+    //ANIMAR MODAL
+    document.getElementById("configuradorContainer").classList.remove("animarModal");
+    void document.getElementById("configuradorContainer").offsetWidth;
+    document.getElementById("configuradorContainer").classList.add("animarModal");
+
+    document.getElementById("pasarelaPago").classList.add("animarModal");
+
+});
+
+
 
 

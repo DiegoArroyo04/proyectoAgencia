@@ -186,6 +186,105 @@ hr {
 
 }
 
+.pasarelaPago {
+    margin: 4%;
+    display: none;
+    align-items: center;
+    flex-direction: column;
+    height: auto;
+    width: 1183px;
+    background-color: var(--blanco-puro);
+    border-radius: 30px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
+
+}
+
+.pasarelaInfo {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: auto;
+    margin-bottom: 4%;
+}
+
+.pasarelaInfo form {
+
+    display: flex;
+    flex-direction: column;
+}
+
+.pasarelaInfo input {
+    background-color: var(--blanco-cremoso2);
+    width: 511px;
+    height: 46px;
+    border-radius: 8px;
+    border: 1px solid #D1D1D1;
+    text-align: center;
+    margin-bottom: 33px;
+    color: var(--gris-claro3);
+    cursor: url('../assets/cursorPointer.png'), pointer;
+
+}
+
+
+
+.pasarelaInfo input::placeholder {
+    color: var(--gris-claro3);
+    font-family: 'Poppins';
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 400;
+
+}
+
+
+.pasarelaInfo input:focus {
+    outline: none;
+    border: 1px solid var(--naranja-calido);
+    box-shadow: 0 0 10px rgba(255, 165, 0, 0.5);
+    transition: box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.logoYPrecio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.logoYPrecio img {
+    width: 282px;
+    height: 237px;
+}
+
+.precioTotalPaquete {
+    width: 287px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.precioTotalPaquete p {
+
+    color: var(--turquesa-oscuro);
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.metodoPago {
+    width: 100%;
+    margin: 2%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.metodoPago img {
+    width: 468px;
+    height: 127px;
+}
+
 
 .titulo {
     color: var(--gris-oscuro);
@@ -399,6 +498,17 @@ hr {
     margin-right: 4%;
 }
 
+.datosPasajeros {
+    width: 100%;
+    height: 681px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 4%;
+    margin-bottom: 4%;
+}
+
 
 /*SCROLL ALOJAMIENTOS*/
 .alojamientos::-webkit-scrollbar {
@@ -455,10 +565,29 @@ hr {
     border-radius: 11px;
 }
 
+/*SCROLL PASAJEROS*/
+.datosPasajeros::-webkit-scrollbar {
+    width: 29px;
+
+
+}
+
+.datosPasajeros::-webkit-scrollbar-track {
+    background: #999999;
+    border-radius: 11px;
+
+}
+
+.datosPasajeros::-webkit-scrollbar-thumb {
+    background-color: var(--gris-claro2);
+    border-radius: 11px;
+}
+
 
 .alojamiento,
 .actividad,
-.transporte {
+.transporte,
+.pasajero {
     margin-bottom: 6%;
     width: 959px;
     height: 374px;
@@ -467,12 +596,73 @@ hr {
 
 }
 
+.pasajero {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 709px;
+}
+
+
 .alojamiento h3,
 .actividad h3,
 .transporte h3 {
     font-size: 20px;
     font-weight: bold;
     margin-bottom: 1%;
+}
+
+.pasajero h3 {
+    color: var(--turquesa-claro);
+    font-weight: bold;
+    font-size: 33px;
+}
+
+.pasajero hr {
+    background-color: #E0E0E0;
+    width: 700px;
+}
+
+.formularioPasajero {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+
+.filaFormulario {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.filaFormulario input {
+    background-color: var(--blanco-cremoso2);
+    width: 246px;
+    height: 46px;
+    border-radius: 8px;
+    border: 1px solid #D1D1D1;
+    text-align: center;
+    margin-bottom: 37px;
+    color: var(--gris-claro3);
+    cursor: url('../assets/cursorPointer.png'), pointer;
+}
+
+.filaFormulario input::placeholder {
+    color: var(--gris-claro3);
+    font-family: 'Poppins';
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 400;
+
+}
+
+
+.filaFormulario input:focus {
+    outline: none;
+    border: 1px solid var(--naranja-calido);
+    box-shadow: 0 0 10px rgba(255, 165, 0, 0.5);
+    transition: box-shadow 0.3s ease, border-color 0.3s ease;
 }
 
 .alojamiento hr,

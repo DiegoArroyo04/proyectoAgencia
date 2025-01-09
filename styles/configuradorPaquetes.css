@@ -133,8 +133,10 @@ header {
     transition: transform 0.2s ease-in-out;
 }
 
-.iniciarSesionBoton:hover {
-
+.iniciarSesionBoton:hover,
+.botonPaquete:hover,
+.secundario:hover,
+.botonConfirmacion:hover {
     transform: scale(1.03);
 }
 
@@ -260,21 +262,22 @@ hr {
     border-radius: 30px;
 }
 
-.paso2Configurador {
+.paso2Configurador,
+.paso3Configuracion,
+.paso4Configuracion,
+.paso5Configuracion {
     display: none;
     flex-direction: column;
     width: 100%;
     align-items: center;
 }
 
-.paso3Configuracion {
+.paso6Configuracion {
     display: none;
     flex-direction: column;
-    width: 100%;
+    width: 906px;
     align-items: center;
 }
-
-
 
 .encabezadoSecundario {
     font-weight: 400;
@@ -283,7 +286,102 @@ hr {
     margin-bottom: 4%;
 }
 
-.alojamientos {
+.resumen {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 100%;
+    margin-bottom: 4%;
+}
+
+.tituloResumen {
+    font-size: 33px;
+    font-weight: 800;
+    color: var(--gris-oscuro);
+
+}
+
+.infoPrecio {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.infoPrecio .precio {
+    color: var(--turquesa-claro);
+    font-weight: bold;
+    font-size: 22px;
+
+}
+
+.resumen hr {
+    background: #E0E0E0;
+    width: 83%;
+    margin-bottom: 2%;
+}
+
+.resumen p {
+    font-weight: bold;
+    font-size: 20px;
+    color: var(--gris-oscuro);
+
+}
+
+.containerPrecioTotal {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 4%;
+}
+
+.precioTotal {
+    width: 364px;
+    height: 99px;
+    background-color: var(--turquesa-claro);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+
+}
+
+.precioTotal p {
+    padding-left: 8%;
+    color: var(--blanco-puro);
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.botonesConfirmacion {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 4%;
+}
+
+.botonConfirmacion {
+    width: 328px;
+    height: 69px;
+    border-radius: 28px;
+    background-color: var(--naranja-calido);
+    color: var(--blanco-puro);
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    cursor: url('../assets/cursorPointer.png'), pointer;
+}
+
+.containerVolverAtras {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 4%;
+}
+
+.alojamientos,
+.actividades,
+.transportes {
     width: 100%;
     height: 874px;
     overflow-y: auto;
@@ -294,7 +392,7 @@ hr {
 }
 
 
-/*SCROLL*/
+/*SCROLL ALOJAMIENTOS*/
 .alojamientos::-webkit-scrollbar {
     width: 29px;
 
@@ -313,7 +411,46 @@ hr {
 }
 
 
-.alojamiento {
+/*SCROLL ACTIVIDADES*/
+.actividades::-webkit-scrollbar {
+    width: 29px;
+
+
+}
+
+.actividades::-webkit-scrollbar-track {
+    background: #999999;
+    border-radius: 11px;
+
+}
+
+.actividades::-webkit-scrollbar-thumb {
+    background-color: var(--gris-claro2);
+    border-radius: 11px;
+}
+
+/*SCROLL TRANSPORTES*/
+.transportes::-webkit-scrollbar {
+    width: 29px;
+
+
+}
+
+.transportes::-webkit-scrollbar-track {
+    background: #999999;
+    border-radius: 11px;
+
+}
+
+.transportes::-webkit-scrollbar-thumb {
+    background-color: var(--gris-claro2);
+    border-radius: 11px;
+}
+
+
+.alojamiento,
+.actividad,
+.transporte {
     margin-bottom: 6%;
     width: 959px;
     height: 374px;
@@ -322,30 +459,40 @@ hr {
 
 }
 
-.alojamiento h3 {
+.alojamiento h3,
+.actividad h3,
+.transporte h3 {
     font-size: 20px;
     font-weight: bold;
     margin-bottom: 1%;
 }
 
-.alojamiento hr {
+.alojamiento hr,
+.actividad hr,
+.transporte hr {
     width: 100%;
     background-color: #CCCCCC;
 }
 
-.alojamientoInformacion {
+.alojamientoInformacion,
+.actividadInformacion,
+.transporteInformacion {
     display: flex;
     width: 100%;
     justify-content: space-between;
 }
 
-.alojamientoInformacion img {
+.alojamientoInformacion img,
+.actividadInformacion img,
+.transporteInformacion img {
     width: 292px;
     height: 287px;
 
 }
 
-.textoAlojamiento {
+.textoAlojamiento,
+.textoActividad,
+.textoTransporte {
     width: 527px;
     height: 236px;
     display: flex;
@@ -353,17 +500,21 @@ hr {
     justify-content: space-between;
 }
 
-.textoAlojamiento p {
+.textoAlojamiento p,
+.textoActividad p,
+.textoTransporte p {
     font-weight: 400;
     font-size: 20px;
     color: #666666;
+
 }
 
 .precioSeleccion {
     display: flex;
     align-items: center;
-
+    justify-content: space-between;
 }
+
 
 .secundario {
     background-color: var(--turquesa-claro);
@@ -377,11 +528,11 @@ hr {
     cursor: url('../assets/cursorPointer.png'), pointer;
 }
 
+
 .precioSeleccion p {
     color: var(--naranja-calido);
     font-weight: bold;
     font-size: 20px;
-    margin-right: 14%;
 }
 
 .datosPaquete {
@@ -659,7 +810,7 @@ footer .logo {
 }
 
 .animarModal {
-    animation: aparecerModal 1s ease-out;
+    animation: aparecerModal 2s ease-out;
 }
 
 .modal p {

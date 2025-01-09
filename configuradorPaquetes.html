@@ -93,7 +93,7 @@
                                     generación para tu comodidad.</p>
                                 <div class="precioSeleccion">
                                     <p>PRECIO:$180 por noche</p>
-                                    <button class="secundario">SELECCIONAR</button>
+                                    <button class="secundario" id="alojamiento1Seleccion">SELECCIONAR</button>
                                 </div>
                             </div>
                         </div>
@@ -109,7 +109,7 @@
                                     emblemáticos de Tokio.</p>
                                 <div class="precioSeleccion">
                                     <p>PRECIO:$250 por noche</p>
-                                    <button class="secundario">SELECCIONAR</button>
+                                    <button class="secundario" id="alojamiento2Seleccion">SELECCIONAR</button>
                                 </div>
                             </div>
                         </div>
@@ -124,7 +124,7 @@
                                     jardines y modernas instalaciones. Un retiro perfecto del bullicio de la ciudad.</p>
                                 <div class="precioSeleccion">
                                     <p>PRECIO:$220 por noche</p>
-                                    <button class="secundario">SELECCIONAR</button>
+                                    <button class="secundario" id="alojamiento3Seleccion">SELECCIONAR</button>
                                 </div>
                             </div>
                         </div>
@@ -139,10 +139,174 @@
                     <button id="volverBoton3" class="botonPaquete">VOLVER ATRÁS</button>
                 </div>
             </div>
+            <div id="paso4Configurador" class="paso4Configuracion">
+                <h2 class="encabezadoSecundario">ACTIVIDADES DISPONIBLES</h2>
+                <div class="actividades">
+                    <div id="actividad1" class="actividad">
+                        <h3>Tokyo Night Food Tour</h3>
+                        <hr>
+                        <div class="actividadInformacion">
+                            <img src="assets/imagenActividad1.png">
+                            <div class="textoActividad">
+                                <p>Sumérgete en los sabores de Tokio con un recorrido nocturno por los mejores puestos
+                                    de
+                                    comida callejera. Disfruta de auténtico sushi, yakitori, y ramen bajo el resplandor
+                                    de
+                                    las luces de la ciudad.</p>
+                                <div class="precioSeleccion">
+                                    <p>PRECIO:$90 por persona</p>
+                                    <button class="secundario" id="actividad1Seleccion">SELECCIONAR</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="actividad2" class="actividad">
+                        <h3>Cherry Blossom Viewing in Tokyo Park</h3>
+                        <hr>
+                        <div class="actividadInformacion">
+                            <img src="assets/imagenActividad2.png">
+                            <div class="textoActividad">
+                                <p>Experimenta la magia de los cerezos en flor durante la primavera en Tokio. Pasea por
+                                    hermosos parques llenos de sakura y disfruta de un tranquilo picnic bajo los
+                                    árboles.
+                                </p>
+                                <div class="precioSeleccion">
+                                    <p>PRECIO:$60 por persona</p>
+                                    <button class="secundario" id="actividad2Seleccion">SELECCIONAR</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="actividad3" class="actividad">
+                        <h3>Traditional Tea Ceremony in Tokyo</h3>
+                        <hr>
+                        <div class="actividadInformacion">
+                            <img src="assets/imagenActividad3.png">
+                            <div class="textoActividad">
+                                <p>Vive una auténtica ceremonia del té en un ambiente tradicional japonés. Aprende sobre
+                                    la
+                                    historia y las técnicas detrás de esta milenaria práctica mientras disfrutas de un
+                                    té
+                                    matcha preparado con precisión.</p>
+                                <div class="precioSeleccion">
+                                    <p>PRECIO:$50 por persona</p>
+                                    <button class="secundario" id="actividad3Seleccion">SELECCIONAR</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="containerBarra">
+                    <p>Tu Aventura Ideal Esta Solo a 2 pasos</p>
+                    <progress value="60" max="100" class="barraProgreso"></progress>
+                </div>
+                <div class="continuar">
+                    <button id="continuarBoton4" class="botonPaquete">CONTINUAR</button>
+                    <button id="volverBoton4" class="botonPaquete">VOLVER ATRÁS</button>
+                </div>
+            </div>
+            <div id="paso5Configurador" class="paso5Configuracion">
+                <h2 class="encabezadoSecundario">TRANSPORTE DISPONIBLE</h2>
+                <div class="transportes">
+                    <div id="transporte1" class="transporte">
+                        <h3>Luxury Cruise Ship to Tokyo</h3>
+                        <hr>
+                        <div class="transporteInformacion">
+                            <img src="assets/imagenTransporte1.png">
+                            <div class="textoTransporte">
+                                <p>Disfruta de una travesía única desde España hasta Tokio en un crucero de lujo. Vive
+                                    una experiencia relajante mientras cruzas el océano con todas las comodidades a
+                                    bordo.</p>
+                                <div class="precioSeleccion">
+                                    <p>PRECIO:$7000 por persona,ida y vuelta</p>
+                                    <button class="secundario" id="transporte1Seleccion">SELECCIONAR</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="transporte2" class="transporte">
+
+                        <h3>Private Yacht Journey to Tokyo</h3>
+                        <hr>
+                        <div class="transporteInformacion">
+                            <img src="assets/imagenTransporte2.png">
+                            <div class="textoTransporte">
+                                <p>Navega con estilo hacia Tokio en un yate privado. Ideal para aquellos que buscan
+                                    privacidad y lujo en su viaje a través de los mares.</p>
+                                <div class="precioSeleccion">
+                                    <p>PRECIO:$40,000 por alquiler del yate privado.</p>
+                                    <button class="secundario" id="transporte2Seleccion">SELECCIONAR</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="transporte3" class="transporte">
+                        <h3>International Road Trip to Tokyo by Campervan</h3>
+                        <hr>
+                        <div class="actividadInformacion">
+                            <img src="assets/imagenTransporte3.png">
+                            <div class="textoTransporte">
+
+                                <p>Atraviesa continentes en una aventura épica en campervan desde Europa hasta Tokio.
+                                    Disfruta de la libertad de viajar a tu propio ritmo mientras exploras paisajes
+                                    únicos en el camino.
+                                </p>
+                                <div class="precioSeleccion">
+                                    <p>PRECIO:$5,000 por alquiler de vehículo y combustible.</p>
+                                    <button class="secundario" id="transporte3Seleccion">SELECCIONAR</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="containerBarra">
+                    <p>Tu Aventura Ideal Esta Solo a 1 paso</p>
+                    <progress value="80" max="100" class="barraProgreso"></progress>
+                </div>
+                <div class="continuar">
+                    <button id="continuarBoton5" class="botonPaquete">CONTINUAR</button>
+                    <button id="volverBoton5" class="botonPaquete">VOLVER ATRÁS</button>
+                </div>
+            </div>
+            <div id="paso6Configurador" class="paso6Configuracion">
+                <h2 class="encabezadoSecundario">TU AVENTURA ESTA LISTA</h2>
+                <div class="resumen">
+                    <h3 class="tituloResumen">RESUMEN DEL PAQUETE</h3>
+                    <hr>
+                    <p>DESTINO: TOKYO🗼 </p>
+                    <p>FECHA Y HUESPEDES: 9/1/2025 - 16/1/2025 2 ADULTOS</p>
+                    <div class="infoPrecio">
+                        <p>ALOJAMIENTO:TOKYO SERENITY SUIT 6 NOCHES</p>
+                        <p class="precio">1080 $</p>
+                    </div>
+                    <div class="infoPrecio">
+                        <p>ACTIVIDADES: VISITA A LOS CEREZOS EN FLOR EN PARQUE TOKYO</p>
+                        <p class="precio">120 $</p>
+                    </div>
+                    <div class="infoPrecio">
+                        <p>TRANSPORTE:CRUCERO DE LUJO HACIA TOKYO IDA Y VUELTA 2 PERSONAS</p>
+                        <p class="precio">14000 $</p>
+                    </div>
+                </div>
+                <div class="containerPrecioTotal">
+                    <div class="precioTotal">
+                        <p>PRECIO TOTAL:</p>
+                        <p class="precio">15200 $</p>
+                    </div>
+                </div>
+                <div class="botonesConfirmacion">
+                    <button class="botonConfirmacion">RESERVAR Y PAGAR</button>
+                    <button class="botonConfirmacion">AGREGAR AL COMPARADOR DE PAQUETES</button>
+                </div>
+                <div class="containerVolverAtras">
+                    <button id="volverBoton6" class="botonPaquete">VOLVER ATRÁS</button>
+                </div>
+            </div>
 
         </div>
-        <div id="fotoDestino" class="fotoDestino"> </div>
+        <div id="fotoDestino" class="fotoDestino"></div>
     </div>
+
     <footer>
 
         <img src="assets/LOGO AGENCIA.png" class="logo">

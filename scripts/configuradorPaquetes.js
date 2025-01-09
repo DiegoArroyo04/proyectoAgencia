@@ -138,3 +138,258 @@ document.getElementById("volverBoton3").addEventListener("click", function () {
 
 
 })
+
+//AVANZAR AL PASO 4
+document.getElementById("continuarBoton3").addEventListener("click", function () {
+
+    //ESCONDER PASO 3
+    document.getElementById("paso3Configurador").style.display = "none";
+
+    //MOSTRAR PASO 4
+    document.getElementById("paso4Configurador").style.display = "flex";
+
+    //ANIMAR MODAL
+    document.getElementById("configuradorContainer").classList.remove("animarModal");
+    void document.getElementById("configuradorContainer").offsetWidth;
+    document.getElementById("configuradorContainer").classList.add("animarModal");
+
+});
+
+//AVANZAR AL PASO 4
+document.getElementById("alojamiento1Seleccion").addEventListener("click", function () {
+
+    //ESCONDER PASO 3
+    document.getElementById("paso3Configurador").style.display = "none";
+
+    //MOSTRAR PASO 4
+    document.getElementById("paso4Configurador").style.display = "flex";
+
+    //ANIMAR MODAL
+    document.getElementById("configuradorContainer").classList.remove("animarModal");
+    void document.getElementById("configuradorContainer").offsetWidth;
+    document.getElementById("configuradorContainer").classList.add("animarModal");
+
+});
+
+
+//AVANZAR AL PASO 4
+document.getElementById("alojamiento2Seleccion").addEventListener("click", function () {
+
+    //ESCONDER PASO 3
+    document.getElementById("paso3Configurador").style.display = "none";
+
+    //MOSTRAR PASO 4
+    document.getElementById("paso4Configurador").style.display = "flex";
+
+    //ANIMAR MODAL
+    document.getElementById("configuradorContainer").classList.remove("animarModal");
+    void document.getElementById("configuradorContainer").offsetWidth;
+    document.getElementById("configuradorContainer").classList.add("animarModal");
+
+});
+
+
+//AVANZAR AL PASO 4
+document.getElementById("alojamiento3Seleccion").addEventListener("click", function () {
+
+    //ESCONDER PASO 3
+    document.getElementById("paso3Configurador").style.display = "none";
+
+    //MOSTRAR PASO 4
+    document.getElementById("paso4Configurador").style.display = "flex";
+
+    //ANIMAR MODAL
+    document.getElementById("configuradorContainer").classList.remove("animarModal");
+    void document.getElementById("configuradorContainer").offsetWidth;
+    document.getElementById("configuradorContainer").classList.add("animarModal");
+
+});
+
+
+//VOLVER AL PASO 3
+document.getElementById("volverBoton4").addEventListener("click", function () {
+
+    //ESCONDER PASO 4
+    document.getElementById("paso4Configurador").style.display = "none";
+
+    //MOSTRAR PASO 3
+    document.getElementById("paso3Configurador").style.display = "flex";
+
+    //ANIMAR MODAL
+    document.getElementById("configuradorContainer").classList.remove("animarModal");
+    void document.getElementById("configuradorContainer").offsetWidth;
+    document.getElementById("configuradorContainer").classList.add("animarModal");
+
+
+})
+
+
+//AVANZAR AL PASO 5
+document.getElementById("continuarBoton4").addEventListener("click", function () {
+
+    //ESCONDER PASO 4
+    document.getElementById("paso4Configurador").style.display = "none";
+
+    //MOSTRAR PASO 4
+    document.getElementById("paso5Configurador").style.display = "flex";
+
+    //ANIMAR MODAL
+    document.getElementById("configuradorContainer").classList.remove("animarModal");
+    void document.getElementById("configuradorContainer").offsetWidth;
+    document.getElementById("configuradorContainer").classList.add("animarModal");
+
+});
+
+
+//AVANZAR AL PASO 5
+document.getElementById("actividad1Seleccion").addEventListener("click", function () {
+
+    //ESCONDER PASO 4
+    document.getElementById("paso4Configurador").style.display = "none";
+
+    //MOSTRAR PASO 4
+    document.getElementById("paso5Configurador").style.display = "flex";
+
+    //ANIMAR MODAL
+    document.getElementById("configuradorContainer").classList.remove("animarModal");
+    void document.getElementById("configuradorContainer").offsetWidth;
+    document.getElementById("configuradorContainer").classList.add("animarModal");
+
+});
+
+//AVANZAR AL PASO 5
+document.getElementById("actividad2Seleccion").addEventListener("click", function () {
+
+    //ESCONDER PASO 4
+    document.getElementById("paso4Configurador").style.display = "none";
+
+    //MOSTRAR PASO 4
+    document.getElementById("paso5Configurador").style.display = "flex";
+
+    //ANIMAR MODAL
+    document.getElementById("configuradorContainer").classList.remove("animarModal");
+    void document.getElementById("configuradorContainer").offsetWidth;
+    document.getElementById("configuradorContainer").classList.add("animarModal");
+
+});
+
+//AVANZAR AL PASO 5
+document.getElementById("actividad3Seleccion").addEventListener("click", function () {
+
+    //ESCONDER PASO 4
+    document.getElementById("paso4Configurador").style.display = "none";
+
+    //MOSTRAR PASO 4
+    document.getElementById("paso5Configurador").style.display = "flex";
+
+    //ANIMAR MODAL
+    document.getElementById("configuradorContainer").classList.remove("animarModal");
+    void document.getElementById("configuradorContainer").offsetWidth;
+    document.getElementById("configuradorContainer").classList.add("animarModal");
+
+});
+
+//VOLVER AL PASO 4
+document.getElementById("volverBoton5").addEventListener("click", function () {
+
+    //ESCONDER PASO 5
+    document.getElementById("paso5Configurador").style.display = "none";
+
+    //MOSTRAR PASO 4
+    document.getElementById("paso4Configurador").style.display = "flex";
+
+    //ANIMAR MODAL
+    document.getElementById("configuradorContainer").classList.remove("animarModal");
+    void document.getElementById("configuradorContainer").offsetWidth;
+    document.getElementById("configuradorContainer").classList.add("animarModal");
+
+
+})
+
+//AVANZAR AL PASO 6
+
+
+
+
+
+document.getElementById("continuarBoton5").addEventListener("click", function () {
+
+    //ESCONDER PASO 5
+    document.getElementById("paso5Configurador").style.display = "none";
+
+    //MOSTRAR PASO 6
+    document.getElementById("paso6Configurador").style.display = "flex";
+
+    //ANIMAR MODAL
+    document.getElementById("configuradorContainer").classList.remove("animarModal");
+    void document.getElementById("configuradorContainer").offsetWidth;
+    document.getElementById("configuradorContainer").classList.add("animarModal");
+
+});
+
+
+document.getElementById("transporte1Seleccion").addEventListener("click", function () {
+
+    //ESCONDER PASO 5
+    document.getElementById("paso5Configurador").style.display = "none";
+
+    //MOSTRAR PASO 6
+    document.getElementById("paso6Configurador").style.display = "flex";
+
+    //ANIMAR MODAL
+    document.getElementById("configuradorContainer").classList.remove("animarModal");
+    void document.getElementById("configuradorContainer").offsetWidth;
+    document.getElementById("configuradorContainer").classList.add("animarModal");
+
+});
+
+
+document.getElementById("transporte2Seleccion").addEventListener("click", function () {
+
+    //ESCONDER PASO 5
+    document.getElementById("paso5Configurador").style.display = "none";
+
+    //MOSTRAR PASO 6
+    document.getElementById("paso6Configurador").style.display = "flex";
+
+    //ANIMAR MODAL
+    document.getElementById("configuradorContainer").classList.remove("animarModal");
+    void document.getElementById("configuradorContainer").offsetWidth;
+    document.getElementById("configuradorContainer").classList.add("animarModal");
+
+});
+
+document.getElementById("transporte3Seleccion").addEventListener("click", function () {
+
+    //ESCONDER PASO 5
+    document.getElementById("paso5Configurador").style.display = "none";
+
+    //MOSTRAR PASO 6
+    document.getElementById("paso6Configurador").style.display = "flex";
+
+    //ANIMAR MODAL
+    document.getElementById("configuradorContainer").classList.remove("animarModal");
+    void document.getElementById("configuradorContainer").offsetWidth;
+    document.getElementById("configuradorContainer").classList.add("animarModal");
+
+});
+
+
+//VOLVER AL PASO 5
+document.getElementById("volverBoton6").addEventListener("click", function () {
+
+    //ESCONDER PASO 6
+    document.getElementById("paso6Configurador").style.display = "none";
+
+    //MOSTRAR PASO 3
+    document.getElementById("paso5Configurador").style.display = "flex";
+
+    //ANIMAR MODAL
+    document.getElementById("configuradorContainer").classList.remove("animarModal");
+    void document.getElementById("configuradorContainer").offsetWidth;
+    document.getElementById("configuradorContainer").classList.add("animarModal");
+
+
+})
+
+

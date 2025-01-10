@@ -100,3 +100,12 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
 });
+
+
+//AL PULSAR IPERSONALIZAR PAQUETE REDIRIGIR AL CONFIGURADOR
+document.getElementById("personalizarPaquete").addEventListener("click", function () {
+
+    window.location.href = 'configuradorPaquetes.html';
+});
+
+

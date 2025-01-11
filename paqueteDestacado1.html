@@ -5,13 +5,10 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TraveLight Comparador de Paquetes</title>
+    <title>Paquete Destacado: Escapada A La Playa Tropical</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="styles/paletaColores.css">
-    <link rel="stylesheet" type="text/css" href="styles/comparadorPaquetes.css">
-
-    <!-- Script grafico-->
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles/paqueteDestacado1.css">
 
 </head>
 
@@ -36,95 +33,14 @@
     </nav>
     <hr>
     <main>
-        <h1>COMPARADOR DE PAQUETES</h1>
-        <div class="comparadorPaquetes" id="comparadorPaquetes">
-            <div id="paquete1" class="paquete">
-                <h2>PAQUETE PERSONALIZADO:TOKYO🗼</h2>
-                <hr>
-                <div class="contenidoPaquete">
-                    <img src="assets/imagenPaquetePersonalizado.png">
-                    <div class="informacion">
-                        <div class="informacionArriba">
-                            <p>Destino: Tokio, Japón<br>
-                                Actividades: Visita a los cerezos de flor en parque Tokyo<br>
-                                Transporte: Crucero de lujo hacia Tokyo</p>
-                            <img src="assets/iconoPapelera.png" id="papelera1">
-                        </div>
-                        <div class="informacionAbajo">
-                            <p>Precio: $15.200</p>
-                            <button class="reservarYPagarBoton">RESERVAR Y PAGAR</button>
-                        </div>
-                    </div>
-                </div>
+        <h1>PAQUETE DESTACADO: ESCAPADA A LA PLAYA TROPICAL</h1>
+        <section class="carrusel">
+            <div class="carruselContenido" id="carruselContenido">
+                <div id="imagenActual" class="imagenCarrusel"></div>
+                <div id="imagenSiguiente" class="imagenCarrusel"></div>
             </div>
-            <div id="paquete2" class="paquete">
-                <h2>SERENIDAD EN SANTORINI</h2>
-                <hr>
-                <div class="contenidoPaquete">
-                    <img src="assets/imagenPaquetePersonalizado2.png">
-                    <div class="informacion">
-                        <div class="informacionArriba">
-                            <p>Destino: Santorini, Grecia<br>
-                                Actividades: Paseo en barco al atardecer, cata de vinos, día de playa.<br>
-                                Transporte: Crucero de lujo desde Atenas a Santorini.</p>
-                            <img src="assets/iconoPapelera.png" id="papelera2">
-                        </div>
-                        <div class="informacionAbajo">
-                            <p>Precio: $25.000</p>
-                            <button class="reservarYPagarBoton">RESERVAR Y PAGAR</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div id="paquete3" class="paquete">
-                <h2>ECO-AVENTURA EN COSTA RICA </h2>
-                <hr>
-                <div class="contenidoPaquete">
-                    <img src="assets/imagenPaquetePersonalizado3.png">
-                    <div class="informacion">
-                        <div class="informacionArriba">
-                            <p>Destino: Costa Rica<br>
-                                Actividades: Caminata en la selva, tirolesa, aguas termales.<br>
-                                Transporte: Vuelo desde Barcelona a San José, Costa Rica.</p>
-                            <img src="assets/iconoPapelera.png" id="papelera3">
-                        </div>
-                        <div class="informacionAbajo">
-                            <p>Precio: $22.000</p>
-                            <button class="reservarYPagarBoton">RESERVAR Y PAGAR</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        </section>
 
-        <div class="containerGrafico">
-            <h3>GRÁFICA COMPARATIVA</h3>
-            <div class="graficoFiltros">
-                <div class="filtros">
-                    <img src="assets/filtro.png">
-                    <label>
-                        <input type="checkbox" id="borrarPrecio" checked>Precio
-                    </label>
-                    <label>
-                        <input type="checkbox" id="borrarPopularidadDestino" checked>Popularidad Destino
-                    </label>
-                    <label>
-                        <input type="checkbox" id="borrarPopularidadAlojamiento" checked>Popularidad Alojamiento
-                    </label>
-                    <label>
-                        <input type="checkbox" id="borrarComodidadTransporte" checked>Comodidad Transporte
-                    </label>
-                    <label>
-                        <input type="checkbox" id="borrarDuracionViaje" checked>Duración Viaje
-                    </label>
-                </div>
-                <div class="grafico">
-                    <canvas id="graficoBarras"></canvas>
-                </div>
-
-            </div>
-
-        </div>
     </main>
     <footer>
 
@@ -192,6 +108,6 @@
         </div>
     </div>
 </body>
-<script src="scripts/comparadorPaquetes.js"></script>
+<script src="scripts/index.js"></script>
 
 </html>

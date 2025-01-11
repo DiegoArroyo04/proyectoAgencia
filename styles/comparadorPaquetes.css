@@ -321,6 +321,11 @@ main h1 {
     height: 36px;
 }
 
+.filtros img:hover {
+    cursor: url('../assets/cursorPointer.png'), pointer;
+    transform: scale(1.03);
+}
+
 .filtros label {
     width: 240px;
     display: flex;

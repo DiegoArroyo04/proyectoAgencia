@@ -411,6 +411,10 @@ document.getElementById("reservar").addEventListener("click", function () {
 
 });
 
+//AL PULSAR AGREGAR AL COMPARADOR DE PAQUETES REDIGRIGIR
+document.getElementById("agregarComparadorBoton").addEventListener("click", function () {
 
+    window.location.href = 'comparadorPaquetes.html';
+});
 
 

@@ -162,6 +162,7 @@ hr {
     border: none;
     height: 1px;
     background-color: var(--gris-claro2);
+    margin-top: 1.5%;
     margin-bottom: 1.5%;
 }
 
@@ -282,14 +283,13 @@ main h1 {
 
 .containerGrafico {
     flex-direction: column;
-    width: 1200px;
+    width: 1300px;
     height: 599px;
     display: flex;
     align-items: center;
     justify-content: center;
 
 }
-
 
 .graficoFiltros {
     display: flex;
@@ -302,7 +302,7 @@ main h1 {
     font-size: 24px;
     font-weight: bold;
     margin-bottom: 4%;
-    padding-left: 300px;
+    padding-left: 100px;
 }
 
 .grafico {

@@ -6,6 +6,10 @@ document.addEventListener("DOMContentLoaded", function () {
         window.location.href = 'login.html';
     });
 
+
+    //AL CARGAR LA PAGINA ANIMAR MODAL
+    document.getElementById("main").classList.add("animarModal");
+
     const imagenActual = document.getElementById("imagenActual");
     const imagenSiguiente = document.getElementById("imagenSiguiente");
 
@@ -107,5 +111,24 @@ document.getElementById("personalizarPaquete").addEventListener("click", functio
 
     window.location.href = 'configuradorPaquetes.html';
 });
+
+//AL PULSAR  PAQUETE DESTACADO REDIRIGIR 
+document.getElementById("paquete1").addEventListener("click", function () {
+
+    window.location.href = 'paqueteDestacado1.html';
+});
+
+//AL PULSAR  PAQUETE DESTACADO REDIRIGIR 
+document.getElementById("paquete2").addEventListener("click", function () {
+
+    window.location.href = 'paqueteDestacado2.html';
+});
+
+//AL PULSAR  PAQUETE DESTACADO REDIRIGIR 
+document.getElementById("paquete3").addEventListener("click", function () {
+
+    window.location.href = 'paqueteDestacado3.html';
+});
+
 
 

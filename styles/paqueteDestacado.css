@@ -162,6 +162,7 @@ hr {
     border: none;
     height: 1px;
     background-color: var(--gris-claro2);
+    margin-top: 1.5%;
     margin-bottom: 1.5%;
 }
 
@@ -187,6 +188,7 @@ main h1 {
 
 .carruselContenido {
     margin: 2%;
+    margin-bottom: 4%;
     width: 1200px;
     height: 500px;
     display: flex;
@@ -220,6 +222,168 @@ main h1 {
     opacity: 0;
 }
 
+.caracteristicasPaquete {
+    width: 1042px;
+    height: auto;
+}
+
+
+.caracteristicasPaquete h2 {
+    color: var(--naranja-calido);
+    font-weight: bold;
+    font-size: 36px;
+    margin-bottom: 3%;
+
+}
+
+.caracteristica {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 4%;
+}
+
+.caracteristica h3 {
+    color: var(--gris-oscuro);
+    font-weight: bold;
+    font-size: 22px;
+    margin-bottom: 2%;
+}
+
+.caracteristica p {
+    color: #555555;
+    font-weight: bold;
+    font-size: 16px;
+    width: 750px;
+}
+
+.caracteristica img {
+    width: 200px;
+    height: 186px;
+
+}
+
+.mapa {
+    margin: 4%;
+    width: 800px;
+    height: 600px;
+    border: none;
+    border-radius: 30px;
+}
+
+.contenedorReseñas {
+    background-color: var(--gris-muy-claro);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 64%;
+    margin: 0 18%;
+    border: 1px solid #000000;
+    border-radius: 30px;
+
+
+}
+
+.encabezadoReseñas {
+    font-size: 1.5rem;
+    font-weight: 600;
+    display: flex;
+    justify-content: start;
+    margin: 5%;
+}
+
+.reseñas {
+    display: flex;
+    margin-bottom: 5%;
+
+}
+
+.reseña {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--blanco-puro);
+    border-radius: 8px;
+    border: 1px solid var(--gris-claro2);
+    width: 325px;
+    height: 248px;
+    margin: 0% 4%;
+    margin-bottom: 6%;
+    transition: transform 0.2s ease-in-out;
+}
+
+.reseña:hover {
+    transform: scale(1.03);
+}
+
+.estrellas {
+    margin: 5%;
+    width: 6vw;
+}
+
+.contenidoReseña {
+    margin: 0% 5%;
+}
+
+.tituloReseña {
+    font-weight: bold;
+    font-size: 1.1875rem;
+}
+
+.descripcionReseña {
+    font-size: 0.9375rem;
+    color: var(--gris-oscuro);
+}
+
+.contenidoUsuario {
+    margin: 5%;
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.contenidoUsuario img {
+    width: 2.1vw;
+    margin-right: 3%;
+}
+
+.nombreUsuario {
+    color: var(--gris-oscuro);
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.fechaReseña {
+    color: #888888;
+    font-size: 0.8125rem;
+}
+
+.botones {
+    display: flex;
+    width: 1410px;
+    justify-content: space-evenly;
+    margin: 4%;
+}
+
+.botones button {
+
+    width: 328px;
+    height: 69px;
+    border-radius: 28px;
+    background-color: var(--naranja-calido);
+    color: var(--blanco-puro);
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+
+
+}
+
+.botones button:hover {
+    cursor: url('../assets/cursorPointer.png'), pointer;
+    transform: scale(1.03);
+}
 
 footer {
     display: flex;

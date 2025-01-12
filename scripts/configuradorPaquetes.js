@@ -415,6 +415,29 @@ document.getElementById("reservar").addEventListener("click", function () {
 document.getElementById("agregarComparadorBoton").addEventListener("click", function () {
 
     window.location.href = 'comparadorPaquetes.html';
+
 });
 
+//REVISAR SI ESTAMOS LLAMANDO A LA PASARELA DE PAGO DIRECTAMENTE
+window.onload = function () {
+    const urlParams = new URLSearchParams(window.location.search);
+    const mostrarPasarela = urlParams.get('pasarela');
+
+    if (mostrarPasarela === 'mostrar') {
+
+        //ESCONDER CAMPOS
+        document.getElementById("map").style.display = "none";
+        document.getElementById("continuarPrimeraPantalla").style.display = "none";
+        document.getElementById("fotoDestino").style.display = "none";
+        document.getElementById("busquedaDestino").style.display = "none";
+
+        //ANIMAR MODAL
+        document.getElementById("configuradorContainer").classList.remove("animarModal");
+        void document.getElementById("configuradorContainer").offsetWidth;
+        document.getElementById("configuradorContainer").classList.add("animarModal");
+
+        document.getElementById("ultimoPaso").style.display = "flex";
+        document.getElementById("pasarelaPago").style.display = "flex";
+    }
+}
 

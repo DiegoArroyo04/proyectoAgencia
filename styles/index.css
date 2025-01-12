@@ -162,6 +162,7 @@ hr {
     border: none;
     height: 1px;
     background-color: var(--gris-claro2);
+    margin-top: 1.5%;
     margin-bottom: 1.5%;
 }
 
@@ -530,6 +531,10 @@ footer .logo {
         transform: scale(1);
         opacity: 1;
     }
+}
+
+.animarModal {
+    animation: aparecerModal 2s ease-out;
 }
 
 /* Animación para cerrar el modal */

@@ -4,6 +4,9 @@ document.getElementById("iniciarSesionBoton").addEventListener("click", function
     window.location.href = 'login.html';
 });
 
+//AL CARGAR LA PAGINA ANIMAR MODAL
+document.getElementById("main").classList.add("animarModal");
+
 // Obtener los modales y los botones de cierre
 var modalPoliticaPrivacidad = document.getElementById('modalPoliticaPrivacidad');
 var modalAvisoLegal = document.getElementById('modalAvisoLegal');
@@ -148,6 +151,30 @@ var chart = new Chart(ctx, {
             }
         }
     }
+});
+
+//AL PULSAR RESERVAR REDIRIGIR REDIRIGIR 
+document.getElementById("reservarYPagarBoton1").addEventListener("click", function () {
+
+    window.location.href = 'configuradorPaquetes.html?pasarela=mostrar';
+
+
+});
+
+//AL PULSAR RESERVAR REDIRIGIR REDIRIGIR 
+document.getElementById("reservarYPagarBoton2").addEventListener("click", function () {
+
+    window.location.href = 'configuradorPaquetes.html?pasarela=mostrar';
+
+
+});
+
+//AL PULSAR RESERVAR REDIRIGIR REDIRIGIR 
+document.getElementById("reservarYPagarBoton3").addEventListener("click", function () {
+
+    window.location.href = 'configuradorPaquetes.html?pasarela=mostrar';
+
+
 });
 
 

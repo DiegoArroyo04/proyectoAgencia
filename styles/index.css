@@ -203,7 +203,7 @@ main {
 
 
 #imagenActual {
-    background-image: url("assets/carruselPaisaje1.jpeg");
+    background-image: url("../assets/carruselPaisaje1.jpeg");
     opacity: 1;
 }
 

@@ -9,10 +9,10 @@ const imagenSiguiente = document.getElementById("imagenSiguiente");
 
 // Array de las rutas de las imágenes
 const imagenes = [
-    "assets/carruselNevado1.png",
-    "assets/carruselNevado2.png",
-    "assets/carruselNevado3.png",
-    "assets/carruselNevado4.png",
+    "assets/bosque1.png",
+    "assets/bosque2.png",
+    "assets/bosque3.png",
+    "assets/bosque4.png",
 ];
 
 var index = 0;  // Índice de la imagen actual (empezamos en 0, que es la imagen 1)
@@ -84,8 +84,6 @@ cerrarAvisoLegal.onclick = function () {
     modalAvisoLegal.style.display = "none";
 }
 
-
-
 // Cerrar modal de Términos y Condiciones
 cerrarTerminosCondiciones.onclick = function () {
     modalTerminosCondiciones.style.display = "none";
@@ -105,16 +103,16 @@ window.onclick = function (event) {
 }
 
 // Crear el mapa
-var map = L.map('map').setView([60.3984, 5.3221], 12);  // Coordenadas de Bergenhus
+var map = L.map('map').setView([50.7345, 4.4160], 12);  // Coordenadas de Hallerbos
 
 // Usar el estilo CartoDB Positron para un efecto cálido
 L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png', {
     maxZoom: 19
 }).addTo(map);
 
-// Crear un marcador en Tokio
-L.marker([60.3984, 5.3221]).addTo(map)
-    .bindPopup("<b>Bergenhus</b>")
+// Crear un marcador en Hallerbos
+L.marker([50.7345, 4.4160]).addTo(map)
+    .bindPopup("<b>Hallerbos</b>")
     .openPopup();
 
 //AL PULSAR RESERVAR REDIRIGIR REDIRIGIR 

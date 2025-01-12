@@ -11,3 +11,5 @@ document.getElementById("cambiarPassBoton").addEventListener("click", function (
     window.location.href = 'login.html';
 });
 
+//AL CARGAR LA PAGINA ANIMAR MODAL
+document.getElementById("containerCambiarPass").classList.add("animarModal");

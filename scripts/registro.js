@@ -27,3 +27,6 @@ document.getElementById("registrarseBoton").addEventListener("click", function (
     event.preventDefault();
     window.location.href = 'login.html';
 });
+
+//AL CARGAR LA PAGINA ANIMAR MODAL
+document.getElementById("containerRegistro").classList.add("animarModal");

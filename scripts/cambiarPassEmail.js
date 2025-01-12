@@ -11,3 +11,6 @@ document.getElementById("cambiarPassBoton").addEventListener("click", function (
     window.location.href = 'nuevaContraseña.html';
 });
 
+//AL CARGAR LA PAGINA ANIMAR MODAL
+document.getElementById("containerCambiarPass").classList.add("animarModal");
+

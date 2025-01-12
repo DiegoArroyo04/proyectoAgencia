@@ -16,6 +16,22 @@ body {
 
 }
 
+@keyframes aparecerModal {
+    0% {
+        transform: scale(0.9);
+        opacity: 0;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.animarModal {
+    animation: aparecerModal 2s ease-out;
+}
+
 .containerLogin {
     width: 40.8%;
     background-color: var(--crema);

@@ -213,7 +213,7 @@ main h1 {
 
 
 #imagenActual {
-    background-image: url("assets/carruselPaisaje1.jpeg");
+
     opacity: 1;
 }
 
@@ -359,9 +359,27 @@ main h1 {
     font-size: 0.8125rem;
 }
 
-.botones {
+.precio {
+
     display: flex;
     width: 1410px;
+    flex-direction: column;
+    margin: 4%;
+    align-items: center;
+
+}
+
+.precio h2 {
+
+    color: var(--naranja-calido);
+    font-weight: bold;
+    font-size: 36px;
+
+}
+
+.botones {
+    display: flex;
+    width: 100%;
     justify-content: space-evenly;
     margin: 4%;
 }

@@ -1,3 +1,9 @@
+//AL PULSAR INICIAR SESION REDIRIGIR AL LOGIN
+document.getElementById("iniciarSesionBoton").addEventListener("click", function () {
+
+    window.location.href = 'login.html';
+});
+
 const imagenActual = document.getElementById("imagenActual");
 const imagenSiguiente = document.getElementById("imagenSiguiente");
 

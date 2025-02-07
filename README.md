@@ -31,13 +31,13 @@ Este proyecto es puramente visual y no tiene funcionalidad backend. Si deseas ve
 1. Clona este repositorio:
 
     ```bash
-    git clone https://github.com/tu_usuario/nombre-del-repositorio.git
+    git clone https://github.com/DiegoArroyo04/proyectoAgencia.git
     ```
 
 2. Navega a la carpeta del proyecto:
 
     ```bash
-    cd nombre-del-repositorio
+    cd proyectoAgencia
     ```
 
 3. Abre el archivo `index.html` en tu navegador para ver el diseño.

@@ -12,17 +12,26 @@
 
 <body>
     <div class="containerRegistro" id="containerRegistro">
-        <img src="assets/LOGO AGENCIA.png" class="logo">
+        <img src="assets/LOGO AGENCIA.png" class="logo" alt="Logo Registro">
         <form>
             <div class="inputs">
-                <input type="text" class="input" placeholder="NOMBRE" required>
-                <input type="text" class="input" placeholder="APELLIDOS" required>
-                <input type="text" class="input" placeholder="DNI" required>
-                <input type="number" class="input" placeholder="TELÉFONO" required>
-                <input type="email" class="input" placeholder="EMAIL" required>
-                <input type="text" class="input" placeholder="NOMBRE DE USUARIO" required>
-                <input type="password" class="input" placeholder="CONTRASEÑA" required>
-                <input type="password" class="input" placeholder="CONFIRMAR CONTRASEÑA" required>
+                <label for="nombre" style="font-size: 0px;">Nombre</label>
+                <input type="text" class="input" id="nombre" placeholder="NOMBRE" required>
+                <label for="apellidos" style="font-size: 0px;">Apellidos</label>
+                <input type="text" class="input" placeholder="APELLIDOS" id="apellidos" required>
+                <label for="dni" style="font-size: 0px;">DNI</label>
+                <input type="text" id="dni" class="input" placeholder="DNI" required>
+                <label for="telefono" style="font-size: 0px;">Telefono</label>
+                <input type="number" class="input" id="telefono" placeholder="TELÉFONO" required>
+                <label for="email" style="font-size: 0px;">Email</label>
+                <input type="email" class="input" placeholder="EMAIL" id="email" required>
+                <label for="nombreUsuario" style="font-size: 0px;">Nombre de Usuario</label>
+                <input type="text" class="input" id="nombreUsuario" placeholder="NOMBRE DE USUARIO" required>
+                <label for="contrasenia" style="font-size: 0px;">Contraseña</label>
+                <input type="password" class="input" placeholder="CONTRASEÑA" id="contrasenia" required>
+                <label for="confirmarContrasenia" style="font-size: 0px;">Confirmar Contraseña</label>
+                <input type="password" class="input" id="confirmarContrasenia" placeholder="CONFIRMAR CONTRASEÑA"
+                    required>
             </div>
             <div class="componentesAbajoFormulario">
                 <div class="terminosCondiciones">

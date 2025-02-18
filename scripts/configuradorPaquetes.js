@@ -8,6 +8,13 @@ document.getElementById("iniciarSesionBoton").addEventListener("click", function
 document.getElementById("configuradorContainer").classList.add("animarModal");
 
 
+//AL PULSAR EN SELLO ACESSIBILIDAD REDIRIGIR
+document.getElementById("selloAccesibilidad").addEventListener("click", function () {
+
+    window.location.href = 'https://www.w3.org/WAI/WCAG2AA-Conformance';
+});
+
+
 // Crear el mapa
 var map = L.map('map').setView([35.6762, 139.7503], 12);  // Coordenadas de Tokio
 

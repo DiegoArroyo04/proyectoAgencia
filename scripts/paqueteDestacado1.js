@@ -4,6 +4,14 @@ document.getElementById("iniciarSesionBoton").addEventListener("click", function
     window.location.href = 'login.html';
 });
 
+
+//AL PULSAR EN SELLO ACESSIBILIDAD REDIRIGIR
+document.getElementById("selloAccesibilidad").addEventListener("click", function () {
+
+    window.location.href = 'https://www.w3.org/WAI/WCAG2AA-Conformance';
+});
+
+
 const imagenActual = document.getElementById("imagenActual");
 const imagenSiguiente = document.getElementById("imagenSiguiente");
 

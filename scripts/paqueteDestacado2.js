@@ -15,6 +15,13 @@ const imagenes = [
     "assets/carruselNevado4.png",
 ];
 
+//AL PULSAR EN SELLO ACESSIBILIDAD REDIRIGIR
+document.getElementById("selloAccesibilidad").addEventListener("click", function () {
+
+    window.location.href = 'https://www.w3.org/WAI/WCAG2AA-Conformance';
+});
+
+
 var index = 0;  // Índice de la imagen actual (empezamos en 0, que es la imagen 1)
 
 //AL CARGAR LA PAGINA ANIMAR MODAL

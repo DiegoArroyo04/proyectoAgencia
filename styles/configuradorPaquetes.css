@@ -966,6 +966,7 @@ footer .logo {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 }
 
 .copy p {
@@ -973,6 +974,12 @@ footer .logo {
     font-weight: bold;
     font-size: 15px;
     text-align: center;
+}
+
+.copy img {
+    width: 100px;
+    margin: 3%;
+    cursor: url('../assets/cursorPointer.png'), pointer;
 }
 
 .enlacesFooter {

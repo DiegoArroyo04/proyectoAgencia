@@ -4,6 +4,13 @@ document.getElementById("iniciarSesionBoton").addEventListener("click", function
     window.location.href = 'login.html';
 });
 
+//AL PULSAR EN SELLO ACESSIBILIDAD REDIRIGIR
+document.getElementById("selloAccesibilidad").addEventListener("click", function () {
+
+    window.location.href = 'https://www.w3.org/WAI/WCAG2AA-Conformance';
+});
+
+
 //AL CARGAR LA PAGINA ANIMAR MODAL
 document.getElementById("main").classList.add("animarModal");
 

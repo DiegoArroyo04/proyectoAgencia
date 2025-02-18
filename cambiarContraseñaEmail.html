@@ -12,11 +12,15 @@
 
 <body>
     <div class="containerCambiarPass" id="containerCambiarPass">
-        <img src="assets/LOGO AGENCIA.png" class="logo">
-        <img src="assets/flechaVolver.png" id="flechaVolver" class="flechaVolver">
+        <img src="assets/LOGO AGENCIA.png" alt="Logo Agencia TraveLight" class="logo">
+        <img src="assets/flechaVolver.png" id="flechaVolver" class="flechaVolver" alt="Flecha Volver">
         <form>
-            <input type="text" class="input" placeholder="NOMBRE DE USUARIO" required>
-            <input type="email" class="input" placeholder="EMAIL" required>
+            <label for="username" style="font-size: 0px;">Nombre Usuario</label>
+            <input type="text" class="input" id="username" placeholder="NOMBRE DE USUARIO" required>
+
+            <label for="email" style="font-size: 0px;">Email</label>
+            <input type="email" class="input" id="email" placeholder="EMAIL" required>
+
             <button class="cambiarPassBoton" id="cambiarPassBoton">CONTINUAR NUEVA CONTRASEÑA</button>
         </form>
     </div>

@@ -89,6 +89,18 @@ body {
     display: flex;
 }
 
+
+.oculto {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
 .iniciarSesionBoton {
     width: 37.2%;
     height: 11.9%;

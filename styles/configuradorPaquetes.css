@@ -337,6 +337,10 @@ hr {
     cursor: url('../assets/cursorPointer.png'), pointer;
 }
 
+.oculto {
+    display: none;
+}
+
 .lupaPaquete {
     position: absolute;
     right: 5%;

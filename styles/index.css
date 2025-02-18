@@ -127,7 +127,7 @@ header {
     background-color: var(--naranja-calido);
     border-radius: 20px;
     border: none;
-    color: var(--blanco-puro);
+    color: var(--gris-oscuro);
     cursor: url('../assets/cursorPointer.png'), pointer;
     font-family: 'Poppins';
     font-weight: bold;

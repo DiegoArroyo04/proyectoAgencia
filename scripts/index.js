@@ -6,6 +6,11 @@ document.addEventListener("DOMContentLoaded", function () {
         window.location.href = 'login.html';
     });
 
+    //AL PULSAR EN SELLO ACESSIBILIDAD REDIRIGIR
+    document.getElementById("selloAccesibilidad").addEventListener("click", function () {
+
+        window.location.href = 'https://www.w3.org/WAI/WCAG2AA-Conformance';
+    });
 
     //AL CARGAR LA PAGINA ANIMAR MODAL
     document.getElementById("main").classList.add("animarModal");
@@ -63,9 +68,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // Mostrar modal de Política de Privacidad
     document.getElementById('politicaPrivacidad').onclick = function () {
         modalPoliticaPrivacidad.style.display = "block";
-
     }
-
     // Mostrar modal de Aviso Legal
     document.getElementById('avisoLegal').onclick = function () {
         modalAvisoLegal.style.display = "block";

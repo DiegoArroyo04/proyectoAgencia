@@ -1,4 +1,4 @@
-/ Obtener los modales y los botones de cierre
+// Obtener los modales y los botones de cierre
 var modalPoliticaPrivacidad = document.getElementById('modalPoliticaPrivacidad');
 var modalAvisoLegal = document.getElementById('modalAvisoLegal');
 var modalTerminosCondiciones = document.getElementById('modalTerminosCondiciones');
@@ -6,6 +6,29 @@ var modalTerminosCondiciones = document.getElementById('modalTerminosCondiciones
 var cerrarPoliticaPrivacidad = document.getElementById('cerrarPoliticaPrivacidad');
 var cerrarAvisoLegal = document.getElementById('cerrarAvisoLegal');
 var cerrarTerminosCondiciones = document.getElementById('cerrarTerminosCondiciones');
+
+
+
+//AL PULSAR INICIAR SESION REDIRIGIR AL LOGIN
+document.getElementById("iniciarSesionBoton").addEventListener("click", function () {
+
+    window.location.href = 'login.html';
+});
+
+
+//AL PULSAR EN SELLO ACESSIBILIDAD REDIRIGIR
+document.getElementById("selloAccesibilidad").addEventListener("click", function () {
+
+    window.location.href = 'https://www.w3.org/WAI/WCAG2AA-Conformance';
+});
+
+
+//PAGINA ACCESIBILIDAD
+document.getElementById("accesibilidad").addEventListener("click", function () {
+
+    window.location.href = 'accesibilidad.html';
+});
+
 
 // Mostrar modal de Política de Privacidad
 document.getElementById('politicaPrivacidad').onclick = function () {
@@ -47,5 +70,4 @@ window.onclick = function (event) {
     if (event.target == modalTerminosCondiciones) {
         modalTerminosCondiciones.style.display = "none";
     }
-}
-});
+};

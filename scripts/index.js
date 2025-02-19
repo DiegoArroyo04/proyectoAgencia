@@ -12,6 +12,14 @@ document.addEventListener("DOMContentLoaded", function () {
         window.location.href = 'https://www.w3.org/WAI/WCAG2AA-Conformance';
     });
 
+    //AL PULSAR EN SELLO ACESSIBILIDAD REDIRIGIR
+    document.getElementById("accesibilidad").addEventListener("click", function () {
+
+        window.location.href = 'accesibilidad.html';
+    });
+
+
+
     //AL CARGAR LA PAGINA ANIMAR MODAL
     document.getElementById("main").classList.add("animarModal");
 
